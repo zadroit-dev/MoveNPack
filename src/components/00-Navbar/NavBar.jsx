@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Nav, Navbar, NavDropdown, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import logo from "../../assets/logo/logo.png";
 import "./navbar.css";
 import Spinners from "../../pages/Spinner/Spinners";
@@ -12,6 +13,7 @@ export default function NavBar() {
   const { t, i18n } = useTranslation("global");
   const [loading, setLoading] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleChangeLang = (lang) => {
     setLoading(true);
@@ -33,13 +35,25 @@ export default function NavBar() {
           <Navbar.Text>
             {" "}
             <div className="social-links d-flex">
-              <a href="">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="bi bi-facebook"></i>
               </a>
-              <a href="">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="bi bi-twitter-x"></i>
               </a>
-              <a href="">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="bi bi-instagram"></i>
               </a>
             </div>
@@ -49,7 +63,7 @@ export default function NavBar() {
       {loading && <Spinners />}
       <Navbar expand="lg" fixed="top" expanded={isExpanded}>
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand onClick={() => navigate("/")}>
             <img
               alt="MoveNPack Logo"
               src={logo}
@@ -61,7 +75,7 @@ export default function NavBar() {
           </Navbar.Brand>
           <Button
             variant="outline-danger"
-            href="/get-a-quote"
+            onClick={() => navigate("/get-a-quote")}
             className="d-lg-none"
           >
             Get a Quote
@@ -78,11 +92,11 @@ export default function NavBar() {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link className="me-5" href="/">
+              <Nav.Link className="me-5" onClick={() => navigate("/")}>
                 {t("nav.home")}
               </Nav.Link>
               <div className="nav-divider d-lg-none"></div>
-              <Nav.Link className="me-5" href="/about">
+              <Nav.Link className="me-5" onClick={() => navigate("/about")}>
                 {t("nav.aboutUs")}
               </Nav.Link>
               <div className="nav-divider d-lg-none"></div>
@@ -91,28 +105,36 @@ export default function NavBar() {
                 title="Services"
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Item href="/services">
+                <NavDropdown.Item onClick={() => navigate("/services")}>
                   Our Services
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/moving-and-packing">
+                <NavDropdown.Item
+                  onClick={() => navigate("/moving-and-packing")}
+                >
                   Moving & Packing
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/professional-cleaning">
+                <NavDropdown.Item
+                  onClick={() => navigate("/professional-cleaning")}
+                >
                   Professional Cleaning
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/transport-service">
+                <NavDropdown.Item
+                  onClick={() => navigate("/transport-service")}
+                >
                   Change Packing only to - Transport Services
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/cleaning-and-moving">
+                <NavDropdown.Item
+                  onClick={() => navigate("/cleaning-and-moving")}
+                >
                   Cleaning & Moving
                 </NavDropdown.Item>
               </NavDropdown>
               <div className="nav-divider d-lg-none"></div>
-              <Nav.Link className="me-5" href="/contact">
+              <Nav.Link className="me-5" onClick={() => navigate("/contact")}>
                 {t("nav.contactUs")}
               </Nav.Link>
               <Nav.Link
@@ -134,7 +156,7 @@ export default function NavBar() {
             </Nav>
             <Button
               variant="outline-danger"
-              href="/get-a-quote"
+              onClick={() => navigate("/get-a-quote")}
               className="d-none d-lg-block"
             >
               {t("nav.getAQuote")}

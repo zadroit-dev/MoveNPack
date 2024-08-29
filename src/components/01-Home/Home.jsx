@@ -433,7 +433,12 @@ export default function Home() {
       </section>
 
       <div className="homeQuote">
-        <Col className="quoteDesc" lg={7} data-aos="fade-up" data-aos-delay="200">
+        <Col
+          className="quoteDesc"
+          lg={7}
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <Form className="emailForm">
             <h3>Get a quote</h3>
             <p>

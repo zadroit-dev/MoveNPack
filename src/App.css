@@ -1,0 +1,15 @@
+.chatBot {
+  animation: animated 7s linear infinite;
+}
+
+.whatsAppImage {
+  width: 60px;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .whatsAppImage {
+    width: 60px;
+    right: 200;
+  }
+}

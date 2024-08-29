@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "contactUs": "Contact Us",
+    "getAQuote": "Get a Quote",
+    "translate": "Translate"
+  },
+  "home": {
+    "welcomeMessage": "Seamless Moving & Cleaning Solutions",
+    "welcomeMessageSub": "Experience stress-free relocations and deep cleaning services tailored to your needs. Let us handle the packing, moving, and cleaning for a smooth transition",
+    "getStarted": "Get Started Now",
+    "whoWeAre": "Who We Are",
+    "aboutWhoWeAreOne": "MoveNPack , we pride ourselves on offering top-notch services tailored to your needs. If you’re relocating need a deep clean or require a segue combination of both, we’ve got you covered.",
+    "aboutWhoWeAreTwo": " “A successful move begins with impeccable packing”",
+    "aboutWhoWeAreThree": "Whether you’re relocating across town or across the country our move and pack services are designed to ensure a seamless transition.",
+    "aboutWhoWeAreFour": "Our goal is to make your life easier. Contact us today to learn more about how our moving and cleaning services can help you start your next chapter with confidence and ease!",
+    "ourServices": "Our Services",
+    "aboutOurServices": "Discover our comprehensive moving and packing services designed for local and long-distance relocations. Let us manage the details while you focus on settling in.",
+    "readmore": "Read More",
+    "readyToMove": "Ready to Move?",
+    "readyToMoveCont": "Take the first step towards a stress-free relocationexperience. Contact us today to discuss your moving and cleaning needs!",
+    "ourServicesCardOneHeader": "Residential Moves",
+    "ourServicesCardOneCont": "Efficiently relocate your home with our dedicated moving and packing solutions..",
+    "ourServicesCardTwoHeader": "Commercial Moves",
+    "ourServicesCardTwoCont": "treamline your office relocation with our professional moving and packing services",
+    "ourServicesCardThreeHeader": "Transport services",
+    "ourServicesCardThreeCont": "Reliable and efficient transport services to ensure your belongings arrive safely and on time",
+    "ourServicesCardFourHeader": "Cleaning Only",
+    "ourServicesCardFourCont": "Get a thorough clean of your space before or after your move for a fresh start.",
+    "clientTestimonials": "Client Testimonials",
+    "testimonialDesc": "Discover what our clients say about us",
+    "testimonialOne": "MoveNPack made our move a breeze! Professional, efficient, and courteous service from start to finish.",
+    "testimonialTwo": "Exceptional deep cleaning service post-move. Our house sparkled, thanks to MoveNPack!",
+    "whyChooseUs": "Why Choose Us",
+    "whyChooseUsDesc": "Explore our unique benefits for a seamless relocation experience",
+    "reasonOneHeader": "Personalized Service",
+    "reasonOne": "Tailored solutions to meet individual moving and cleaning requirements.",
+    "reasonTwoHeader": "Seamless Transition",
+    "reasonTwo": "Experience a smooth and hassle-free move with proficient packing techniques.",
+    "reasonThreeHeader": "Professional Team",
+    "reasonThree": "Skilled movers and cleaners dedicated to your satisfaction and peace of mind."
+  },
+  "about": {
+    "title": "About Us",
+    "talioredSolutions": "Tailored Solutions",
+    "description": "Customized services to suit your moving and cleaning requirements, ensuring a stress-free transition across any distance with MoveNPack.",
+    "aboutUsDesc": "At MoveNPack, we offer top-notch moving and cleaning services, tailored to your specific needs. Our aim is to simplify your life and provide a seamless transition to your new space.",
+    "yearsOfExp": "Years of Experience",
+    "teamMembers": "Team Members",
+    "awardsOwn": "Awards Won",
+    "getStarted": "Get Started Now",
+    "aim": "Our Aim",
+    "mission": "Mission Statement",
+    "missionDesc": "To provide impeccable moving and cleaning services, tailored to each client’s needs, ensuring a smooth and stress-free relocation experience",
+    "ourGoals": "Our Goals",
+    "companyGoals": "Company Goals",
+    "goalsDesc": "Our goal is to make your relocation as seamless and easy as possible, by offering high-quality services that cater to all aspects of your move and clean needs",
+    "elevateYourMove": "Elevate Your Move Today",
+    "or": "Or",
+    "call": "Call: +41789235590"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Explore the range of services we offer.",
+    "tailoredMovingSoln": "Tailored Moving Solutions",
+    "tailoredCont": "Experience seamless transitions with our personalized moving and packing services across town or country. Let us simplify your relocation journey.",
+    "servOneHeader": "Assessment",
+    "servOne": "Evaluate your moving needs to create a customized plan for a stress-free experience.",
+    "servTwoHeader": "Packing",
+    "servTwo": "Carefully pack your belongings with precision and care to ensure their safe transport.",
+    "servThreeHeader": "Cleaning",
+    "servThree": "Provide deep cleaning services to leave your old and new spaces spotless and refreshed.",
+    "one": {
+      "key": "Residential Moves",
+      "value": "Efficiently relocate your home with our dedicated moving and packing solutions."
+    },
+    "two": {
+      "key": "Commercial Moves",
+      "value": "Streamline your office relocation with our professional moving and packing services."
+    },
+    "three": {
+      "key": "Packing Only",
+      "value": "Opt for our expert packing services to ensure a secure and organized move."
+    },
+    "four": {
+      "key": "Cleaning Only",
+      "value": "Get a thorough clean of your space before or after your move for a fresh start."
+    },
+    "five": {
+      "key": "Furniture Assembly",
+      "value": "Let us handle the assembly of your furniture for a hassle-free moving experience."
+    },
+    "six": {
+      "key": "Storage Solutions",
+      "value": "Store your belongings securely with our flexible and convenient storage options."
+    },
+    "seven": {
+      "key": "Antique & Specialty Items",
+      "value": "Ensure the safe handling and transport of your valuable and delicate items"
+    },
+    "eight": {
+      "key": "Moving Supplies",
+      "value": "Find all the packing materials you need for your move in one convenient place."
+    }
+  },
+  "serviceCards": {},
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us for any inquiries."
+  },
+  "quote": {
+    "title": "Get a Quote",
+    "name": "Name",
+    "first": "First",
+    "last": "Last",
+    "phone": "Phone",
+    "email": "Email",
+    "from": "Move From > Street / No.",
+    "to": "Move To > Street / No.",
+    "post": "Postcode / City",
+    "rooms": "Number of Rooms",
+    "floor": "Floor / Lift",
+    "driver": "Driver Required",
+    "additional": "Additonal person Required for help",
+    "materials": "Packing Materials Required",
+    "message": "Your Message",
+    "submit": "Submit"
+  },
+  "quoteOptions": {
+    "efh": "EFH",
+    "ground": "Ground Floor",
+    "mezzanine": "Mezzanine",
+    "1stFloorWithoutLift": "1st floor without lift",
+    "2ndFloorWithoutLift": "2nd floor without lift",
+    "3rdFloorWithoutLift": "3rd floor without lift",
+    "4thFloorWithoutLift": "4th floor without lift",
+    "5thFloorWithoutLift": "5th floor without lift",
+    "6thFloorWithoutLift": "6th floor without lift",
+    "7thFloorWithoutLift": "7th floor without lift",
+    "MoreThan7FloorsWithoutLift": "More than 7 floors without lift",
+    "1stFloorWithLift": "1st floor with lift",
+    "2ndFloorWithLift": "2nd floor with lift",
+    "3rdFloorWithLift": "3rd floor with lift",
+    "4thFloorWithLift": "4th floor with lift",
+    "5thFloorWithLift": "5th floor with lift",
+    "6thFloorWithLift": "6th floor with lift",
+    "7thFloorWithLift": "7th floor with lift",
+    "8thFloorWithLift": "8th floor with lift",
+    "9thFloorWithLift": "9th floor with lift",
+    "10thFloorWithLift": "10th floor with lift",
+    "11thFloorWithLift": "11th floor with lift",
+    "12thFloorWithLift": "12th floor with lift",
+    "13thFloorWithLift": "13th floor with lift",
+    "14thFloorWithLift": "14th floor with lift",
+    "15thFloorWithLift": "15th floor with lift",
+    "MoreThan15FloorsWithLift": "More than 15 floors with lift"
+  },
+  "quoteOpt": {
+    "yes": "Yes",
+    "no": "No"
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "aboutUsCont": "MoveNPack provides stress-free relocations and expert deep cleaning services for a smooth transition.",
+    "contact": "Contact",
+    "mobile": "Mobile",
+    "email": "Email",
+    "copyright": "Copyright © 2024 MoveNPack"
+  },
+  "contactUs": {
+    "getInTouch": "Get In Touch",
+    "quote": "Reach out for personalized service assistance",
+    "email": "Email",
+    "query": "Questions or queries? Get in touch!",
+    "mailId": "info@movenpack.ch",
+    "address": "Address",
+    "workingHrs": "Working hours",
+    "workTime": "Juan Brands 4 less Volketswil",
+    "phone": "Phone",
+    "phoneQ": "Our friendly team is here to help.",
+    "mobile": "+41789235590",
+    "follow": "Follow Us",
+    "contactUs": "Contact Us",
+    "contQuote": "Let’s connect to make your move hassle-free",
+    "name": "Name",
+    "message": "Message",
+    "submit": "Submit",
+    "elevate": "Elevate Your Move Today",
+    "getStart": "Get Started Now",
+    "or": "Or",
+    "call": "Call: +41789235590"
+  }
+}

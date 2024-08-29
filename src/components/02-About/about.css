@@ -1,0 +1,113 @@
+.stats .stats-item {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.stats .stats-item i {
+  color: #ff4a17;
+  font-size: 42px;
+  line-height: 0;
+  margin-right: 20px;
+}
+
+.stats .stats-item span {
+  color: #273d4e;
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+}
+
+.stats .stats-item p {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.aboutCont {
+  padding: 90px 10px;
+}
+
+.about {
+  padding: 50px 10px;
+  background-color: #f9f3eb;
+}
+
+.contents h1{
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Archivo", sans-serif;
+}
+
+.contents p{
+  text-align: justify;
+  padding: 10px;
+}
+
+.aboutTexts p,
+.content p {
+  text-align: justify;
+}
+
+.container .row {
+  justify-content: space-between;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-start {
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .aboutTexts,
+  .content {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .aboutTexts,
+  .content {
+    text-align: start;
+  }
+}
+
+
+.aboutTexts h3, .content h3{
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Archivo", sans-serif;
+}
+
+.aboutTexts span, .content span{
+  color: #ff4a17;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.aboutTexts p, .content p{
+  font-size: 18px;
+}
+
+.aboutUs .contactUsHeader{
+  background-color: #f9f3eb;
+  padding: 50px 10px;
+}
+
+.aboutUs .contactUsHeader p{
+  text-align: center;
+  font-size: 20px;
+}
+
+.aboutUs .contactUsHeader h3{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Archivo", sans-serif;
+}
+
+.aboutUs .whoWeAre{
+  margin: 0;
+}

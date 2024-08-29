@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "home": "Heim",
+    "aboutUs": "Über uns",
+    "services": "Dienstleistungen",
+    "contactUs": "Kontaktieren Sie uns",
+    "getAQuote": "Ein Angebot einholen",
+    "translate": "Translate"
+  },
+  "home": {
+    "welcomeMessage": "Nahtlose Umzugs- und Reinigungslösungen",
+    "welcomeMessageSub": "Erleben Sie stressfreie Umzüge und gründliche Reinigungsdienste, die auf Ihre Bedürfnisse zugeschnitten sind. Überlassen Sie uns das Packen, den Umzug und die Reinigung für einen reibungslosen Übergang",
+    "getStarted": "Jetzt loslegen",
+    "whoWeAre": "Wer wir sind",
+    "aboutWhoWeAreOne": "Entdecken Sie unsere umfassenden Umzugs- und Verpackungsservices für Nah- und Fernumzüge. Wir kümmern uns um die Details, während Sie sich auf Ihr Einleben konzentrieren.",
+    "aboutWhoWeAreTwo": " “ Ein erfolgreicher Umzug beginnt mit einwandfreiem Packen”",
+    "aboutWhoWeAreThree": "Ganz gleich, ob Sie innerhalb der Stadt oder in ein anderes Land umziehen, unsere Umzugs- und Packdienste sind darauf ausgelegt, einen reibungslosen Übergang zu gewährleisten.",
+    "aboutWhoWeAreFour": "Unser Ziel ist es, Ihnen das Leben zu erleichtern. Kontaktieren Sie uns noch heute, um mehr darüber zu erfahren, wie unsere Umzugs- und Reinigungsdienste Ihnen helfen können, Ihr nächstes Kapitel voller Zuversicht und Leichtigkeit zu beginnen!",
+    "ourServices": "Dienstleistungen",
+    "aboutOurServices": "Discover our comprehensive moving and packing services designed for local and long-distance relocations. Let us manage the details while you focus on settling in.",
+    "readmore": "Mehr lesen",
+    "readyToMove": "Bereit zum Umzug?",
+    "readyToMoveCont": "Machen Sie den ersten Schritt zu einem stressfreien Umzugserlebnis. Kontaktieren Sie uns noch heute, um Ihre Umzugs- und Reinigungsanforderungen zu besprechen!",
+    "ourServicesCardOneHeader": "Umzüge",
+    "ourServicesCardOneCont": "Verlegen Sie Ihren Umzug effizient mit unseren speziellen Umzugs- und Verpackungslösungen.",
+    "ourServicesCardTwoHeader": "Gewerbliche Umzüge",
+    "ourServicesCardTwoCont": "Optimieren Sie Ihren Büroumzug mit unseren professionellen Umzugs- und Verpackungsdiensten",
+    "ourServicesCardThreeHeader": "Transportdienstleistungen",
+    "ourServicesCardThreeCont": "Zuverlässige und effiziente Transportdienste, um sicherzustellen, dass Ihr Eigentum sicher und pünktlich ankommt",
+    "ourServicesCardFourHeader": "Nur Reinigung",
+    "ourServicesCardFourCont": "Reinigen Sie Ihre Räumlichkeiten vor oder nach Ihrem Umzug gründlich, damit Sie neu anfangen können.",
+    "clientTestimonials": "Kundenreferenzen",
+    "testimonialDesc": "Entdecken Sie, was unsere Kunden über uns sagen",
+    "testimonialOne": "MoveNPack hat unseren Umzug zu einem Kinderspiel gemacht! Professioneller, effizienter und zuvorkommender Service von Anfang bis Ende.",
+    "testimonialTwo": "Außergewöhnlicher Tiefenreinigungsservice nach dem Umzug. Unser Haus glänzte, dank MoveNPack!",
+    "whyChooseUs": "Warum uns wählen",
+    "whyChooseUsDesc": "Entdecken Sie unsere einzigartigen Vorteile für einen reibungslosen Umzug",
+    "reasonOneHeader": "Personalisierter Service",
+    "reasonOne": "Maßgeschneiderte Lösungen für individuelle Umzugs- und Reinigungsanforderungen.",
+    "reasonTwoHeader": "Nahtlose Übergänge",
+    "reasonTwo": "Erleben Sie einen reibungslosen und mühelosen Umzug mit kompetenten Verpackungstechniken.",
+    "reasonThreeHeader": "Professionelles Team",
+    "reasonThree": "Kompetente Umzugshelfer und Reinigungskräfte, die sich für Ihre Zufriedenheit und Ihren Seelenfrieden einsetzen."
+  },
+  "about": {
+    "title": "Über uns",
+    "talioredSolutions": "Maßgeschneiderte Lösungen",
+    "description": "Maßgeschneiderte Dienstleistungen für Ihren Umzugs- und Reinigungsbedarf, die einen stressfreien Übergang über jede Entfernung mit MoveNPack gewährleisten.",
+    "aboutUsDesc": "Wir von MoveNPack bieten Ihnen erstklassige Umzugsdienstleistungen und Reinigungsdienste, die auf Ihre speziellen Bedürfnisse zugeschnitten sind. Unser Ziel ist es, Ihr Leben zu vereinfachen und Ihnen einen nahtlosen Übergang in Ihre neuen Räumlichkeiten zu ermöglichen.",
+    "yearsOfExp": "Jahre der Erfahrung",
+    "teamMembers": "Teammitglieder",
+    "awardsOwn": "Gewonnene Auszeichnungen",
+    "getStarted": "Jetzt starten",
+    "aim": "Unser Ziel",
+    "mission": "Leitbild",
+    "missionDesc": "Bereitstellung tadelloser, auf die Bedürfnisse jedes Kunden zugeschnittener Umzugs- und Reinigungsdienste, die einen reibungslosen und stressfreien Umzug gewährleisten",
+    "ourGoals": "Unsere Ziele",
+    "companyGoals": "Ziele des Unternehmens",
+    "goalsDesc": "Unser Ziel ist es, Ihren Umzug so nahtlos und einfach wie möglich zu gestalten, indem wir qualitativ hochwertige Dienstleistungen anbieten, die alle Aspekte Ihres Umzugs und Ihrer Reinigungsbedürfnisse abdecken",
+    "elevateYourMove": "Erhöhen Sie Ihren Umzug noch heute",
+    "or": "Oder",
+    "call": "Anruf: +41789235590"
+  },
+  "services": {
+    "title": "Dienstleistungen",
+    "description": "Explore the range of services we offer.",
+    "tailoredMovingSoln": "Maßgeschneiderte Umzugslösungen",
+    "tailoredCont": "Erleben Sie nahtlose Übergänge mit unseren personalisierten Umzugs- und Verpackungsdienstleistungen in der Stadt oder im Land. Lassen Sie uns Ihre Umzugsreise vereinfachen.",
+    "servOneHeader": "Bewertung",
+    "servOne": "Ermitteln Sie Ihre Umzugsbedürfnisse, um einen maßgeschneiderten Plan für ein stressfreies Erlebnis zu erstellen.",
+    "servTwoHeader": "Verpacken",
+    "servTwo": "Verpacken Sie Ihr Hab und Gut mit Sorgfalt und Genauigkeit, um einen sicheren Transport zu gewährleisten.",
+    "servThreeHeader": "Reinigung",
+    "servThree": "Wir bieten Tiefenreinigungsdienste an, damit Ihre alten und neuen Räume makellos und erfrischt sind.",
+    "one": {
+      "key": "Umzüge",
+      "value": "Verlegen Sie Ihren Umzug effizient mit unseren speziellen Umzugs- und Verpackungslösungen."
+    },
+    "two": {
+      "key": "Gewerbliche Umzüge",
+      "value": "Optimieren Sie Ihren Büroumzug mit unseren professionellen Umzugs- und Verpackungsdiensten"
+    },
+    "three": {
+      "key": "Nur Verpacken",
+      "value": "Entscheiden Sie sich für unsere fachkundigen Verpackungsdienste, um einen sicheren und organisierten Umzug zu gewährleisten."
+    },
+    "four": {
+      "key": "Nur Reinigung",
+      "value": "Reinigen Sie Ihre Räumlichkeiten vor oder nach Ihrem Umzug gründlich, damit Sie neu anfangen können."
+    },
+    "five": {
+      "key": "Montage von Möbeln",
+      "value": "Überlassen Sie uns die Montage Ihrer Möbel, damit der Umzug reibungslos verläuft."
+    },
+    "six": {
+      "key": "Lösungen für die Lagerung",
+      "value": "Lagern Sie Ihr Hab und Gut sicher mit unseren flexiblen und praktischen Aufbewahrungsmöglichkeiten."
+    },
+    "seven": {
+      "key": "Antiquitäten & Spezialitäten",
+      "value": "Gewährleistung der sicheren Handhabung und des Transports Ihrer wertvollen und empfindlichen Gegenstände"
+    },
+    "eight": {
+      "key": "Umzugsgut",
+      "value": "Hier finden Sie alle Verpackungsmaterialien, die Sie für Ihren Umzug benötigen, an einem Ort."
+    }
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us for any inquiries."
+  },
+  "quote": {
+    "title": "Ein Angebot einholen",
+    "name": "Name",
+    "first": "Erste",
+    "last": "Zuletzt",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "from": "Umzug von > Straße / Nr.",
+    "to": "Bewegen nach > Straße / Nr.",
+    "post": "Postleitzahl / Stadt",
+    "rooms": "Anzahl der Zimmer",
+    "floor": "Stockwerk/Lift",
+    "driver": "Fahrer erforderlich",
+    "additional": "Zusätzliche Person für Hilfe erforderlich",
+    "materials": "Erforderliches Verpackungsmaterial",
+    "message": "Ihre Nachricht",
+    "submit": "Einreichen",
+    "efh": "EFH",
+    "ground": "Erdgeschoss",
+    "mezzanine": "Mezzanin",
+    "1stFloorWithoutLift": "1. Stock ohne Aufzug",
+    "2ndFloorWithoutLift": "2. Stock ohne Aufzug",
+    "3rdFloorWithoutLift": "3. Stock ohne Aufzug",
+    "4thFloorWithoutLift": "4. Stock ohne Aufzug",
+    "5thFloorWithoutLift": "5. Stock ohne Aufzug",
+    "6thFloorWithoutLift": "6. Stock ohne Aufzug",
+    "7thFloorWithoutLift": "7. Stock ohne Aufzug",
+    "MoreThan7FloorsWithoutLift": "Mehr als 7 Stockwerke ohne Aufzug",
+    "1stFloorWithLift": "1. Stock mit Aufzug",
+    "2ndFloorWithLift": "2. Stock mit Aufzug",
+    "3rdFloorWithLift": "3. Stock mit Aufzug",
+    "4thFloorWithLift": "4. Stock mit Aufzug",
+    "5thFloorWithLift": "5. Stock mit Aufzug",
+    "6thFloorWithLift": "6. Stock mit Aufzug",
+    "7thFloorWithLift": "7. Stock mit Aufzug",
+    "8thFloorWithLift": "8. Stock mit Aufzug",
+    "9thFloorWithLift": "9. Stock mit Aufzug",
+    "10thFloorWithLift": "10. Stock mit Aufzug",
+    "11thFloorWithLift": "11. Stock mit Aufzug",
+    "12thFloorWithLift": "12. Stock mit Aufzug",
+    "13thFloorWithLift": "13. Stock mit Aufzug",
+    "14thFloorWithLift": "14. Stock mit Aufzug",
+    "15thFloorWithLift": "15. Stock mit Aufzug",
+    "MoreThan15FloorsWithLift": "Mehr als 15 Etagen mit Aufzug"
+  },
+  "quoteOpt": {
+    "yes": "Ja",
+    "no": "Nein"
+  },
+  "footer": {
+    "aboutUs": "Über uns",
+    "aboutUsCont": "MoveNPack bietet stressfreie Umzüge und fachmännische Tiefenreinigungsdienste für einen reibungslosen Übergang.",
+    "contact": "Kontakt:",
+    "mobile": "Telefon",
+    "email": "E-Mail",
+    "copyright": "Urheberrecht © 2024 MoveNPack"
+  },
+  "contactUs": {
+    "getInTouch": "Kontakt aufnehmen",
+    "quote": "Erreichen Sie uns, wenn Sie persönliche Unterstützung benötigen",
+    "email": "E-Mail",
+    "query": "Haben Sie Fragen oder Wünsche? Kontaktieren Sie uns!",
+    "mailId": "info@movenpack.ch",
+    "address": "Adresse",
+    "workingHrs": "Arbeitszeiten",
+    "workTime": "Juan Brands 4 weniger Volketswil",
+    "phone": "Telefon",
+    "phoneQ": "Unser freundliches Team ist für Sie da.",
+    "mobile": "+41789235590",
+    "follow": "Folgen Sie uns",
+    "contactUs": "Kontaktieren Sie uns",
+    "contQuote": "Lassen Sie uns zusammenarbeiten, damit Ihr Umzug reibungslos verläuft",
+    "name": "Name",
+    "message": "Nachricht",
+    "submit": "Einreichen",
+    "elevate": "Erhöhen Sie Ihren Umzug noch heute",
+    "getStart": "Jetzt loslegen",
+    "or": "Oder",
+    "call": "Anruf: +41789235590"
+  }
+}

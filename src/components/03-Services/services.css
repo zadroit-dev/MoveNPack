@@ -1,0 +1,197 @@
+.services .contactUsHeader {
+  background-color: #f9f3eb;
+  padding: 50px 10px;
+}
+
+.services .contactUsHeader p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.services .contactUsHeader h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Archivo", sans-serif;
+}
+
+.serviceContents .services .service-item {
+  background-color: #ffffff;
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 18px;
+  border-bottom: 5px solid #ffffff;
+  height: 100%;
+}
+
+.serviceContents .services .service-item .icon {
+  color: #ffffff;
+  background: #f76c45;
+  margin: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.serviceContents .services .service-item h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+
+.serviceContents .services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1365px) {
+  .serviceContents .services .service-item:hover {
+    transform: translateY(-10px);
+    border-color: #f76c45;
+  }
+
+  .serviceContents .services .service-item:hover h3 {
+    color: #f76c45;
+  }
+}
+
+.whyChooseUs .services .service-item p {
+  text-align: start;
+}
+
+.recent-posts article {
+  background: var(--surface-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.recent-posts .post-img {
+  max-height: 240px;
+  margin: -30px -30px 15px -30px;
+  overflow: hidden;
+}
+
+.recent-posts .post-category {
+  font-size: 16px;
+  color: color-mix(in srgb, #212529, transparent 50%);
+  margin-bottom: 10px;
+}
+
+.recent-posts .title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.recent-posts .title a {
+  color: #32353a;
+  transition: 0.3s;
+}
+
+.recent-posts .title a:hover {
+  color: #e84545;
+}
+
+.recent-posts .post-author-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.recent-posts .post-author {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.recent-posts .post-date {
+  font-size: 14px;
+  color: color-mix(in srgb, #212529, transparent 50%);
+  margin-bottom: 0;
+}
+
+.contactUsHeader h3 {
+  font-size: 2rem;
+}
+
+.contactUsHeader p {
+  font-size: 1.2rem;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.service .service-item .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-card .card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+}
+
+.section-title p {
+  font-size: 1.2rem;
+}
+
+.post-meta {
+  margin-top: 10px;
+}
+
+.post-author {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.serviceOne {
+  margin: 0;
+  align-items: center;
+  background-color: white;
+  padding: 50px 10px;
+  justify-content: center;
+}
+
+.servicesOne .contactUsHeader {
+  background-color: #f9f3eb;
+  padding: 50px 10px;
+}
+
+.servicesOne .contactUsHeader h5,
+.servicesOne .contactUsHeader h3,
+.servicesOne .contactUsHeader p {
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.serviceOne .contents p {
+  font-size: 18px;
+}

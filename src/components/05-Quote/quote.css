@@ -86,3 +86,33 @@
 .get-a-quote .emailForm button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+
+.getStartedBtn {
+}
+
+.submitBtn .getStartedBtn{
+  
+  background-color: #f76c45;
+  border-color: #f76c45;
+  color: white;
+}
+
+.getStartedBtn:hover,
+.getStartedBtn:focus,
+.getStartedBtn:active {
+  background-color: darkorange;
+  border-color: darkorange;
+  color: white;
+}
+
+.getStartedBtn:active {
+  background-color: darkorange;
+  border-color: darkorange;
+  color: white;
+}
+
+.getStartedBtn:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #666;
+}

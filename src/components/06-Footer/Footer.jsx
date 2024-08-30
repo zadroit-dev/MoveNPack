@@ -1,16 +1,28 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./footer.css";
 
 import card1 from "../../assets/cards/card.png";
 import card2 from "../../assets/cards/master.png";
 import card3 from "../../assets/cards/rupay.png";
-import card4 from "../../assets/cards/card4.svg";
-import card5 from "../../assets/cards/card5.svg";
 
 export default function Footer() {
   const { t } = useTranslation("global");
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
+
+  const socialMediaLinks = [
+    { name: "Facebook", iconClass: "bi bi-facebook", url: "#" },
+    { name: "Twitter", iconClass: "bi bi-twitter-x", url: "#" },
+    { name: "Instagram", iconClass: "bi bi-instagram", url: "#" },
+    { name: "LinkedIn", iconClass: "bi bi-linkedin", url: "#" },
+    { name: "YouTube", iconClass: "bi bi-youtube", url: "#" },
+  ];
 
   return (
     <footer id="footer" className="footer position-relative light-background">
@@ -20,41 +32,47 @@ export default function Footer() {
             <span className="sitename">MoveNPack</span>
             <p>{t("footer.aboutUsCont")}</p>
             <div className="social-links d-flex mt-4">
-              <a href="">
-                <i className="bi bi-facebook"></i>
-              </a>
-              <a href="">
-                <i className="bi bi-twitter-x"></i>
-              </a>
-              <a href="">
-                <i className="bi bi-instagram"></i>
-              </a>
-              <a href="">
-                <i className="bi bi-linkedin"></i>
-              </a>
-              <a href="">
-                <i className="bi bi-youtube"></i>
-              </a>
+              {socialMediaLinks.map((link, index) => (
+                <OverlayTrigger
+                  key={index}
+                  placement="top"
+                  overlay={
+                    <Tooltip id={`tooltip-${index}`}>{link.name}</Tooltip>
+                  }
+                >
+                  <a href={link.url}>
+                    <i className={link.iconClass}></i>
+                  </a>
+                </OverlayTrigger>
+              ))}
             </div>
           </Col>
 
           <Col lg={2} xs={6} className="footer-links">
-            <h4>Useful Links</h4>
+            <h4>{t("footer.useFulLink")}</h4>
             <ul>
               <li>
-                <a href="/">{t("nav.home")}</a>
+                <span onClick={() => handleNavigate("/")}>{t("nav.home")}</span>
               </li>
               <li>
-                <a href="/about">{t("nav.aboutUs")}</a>
+                <span onClick={() => handleNavigate("/about")}>
+                  {t("nav.aboutUs")}
+                </span>
               </li>
               <li>
-                <a href="/services">{t("nav.services")}</a>
+                <span onClick={() => handleNavigate("/services")}>
+                  {t("nav.services")}
+                </span>
               </li>
               <li>
-                <a href="/contact">{t("nav.contactUs")}</a>
+                <span onClick={() => handleNavigate("/contact")}>
+                  {t("nav.contactUs")}
+                </span>
               </li>
               <li>
-                <a href="/get-a-quote">{t("nav.getAQuote")}</a>
+                <span onClick={() => handleNavigate("/get-a-quote")}>
+                  {t("nav.getAQuote")}
+                </span>
               </li>
             </ul>
           </Col>
@@ -63,16 +81,24 @@ export default function Footer() {
             <h4>{t("home.ourServices")}</h4>
             <ul>
               <li>
-                <a href="/moving-and-packing">Moving & Packing</a>
+                <span onClick={() => handleNavigate("/moving-and-packing")}>
+                  {t("footer.moveNPack")}
+                </span>
               </li>
               <li>
-                <a href="/professional-cleaning">Professional Cleaning</a>
+                <span onClick={() => handleNavigate("/professional-cleaning")}>
+                  {t("footer.professionalClean")}
+                </span>
               </li>
               <li>
-                <a href="/transport-service">Transport Services</a>
+                <span onClick={() => handleNavigate("/transport-service")}>
+                  {t("footer.transportService")}
+                </span>
               </li>
               <li>
-                <a href="/cleaning-and-moving">Cleaning & Moving</a>
+                <span onClick={() => handleNavigate("/cleaning-and-moving")}>
+                  {t("footer.cleaningNMov")}
+                </span>
               </li>
             </ul>
           </Col>
@@ -93,27 +119,25 @@ export default function Footer() {
                 info@movenpack.ch
               </a>
             </p>
-          </Col>
 
-          <Col
-            lg={3}
-            md={12}
-            className="footer-contact text-center text-md-start"
-          >
-            <h4>We Accept All</h4>
-            <p className="mt-2">
-              <div className="social-links d-flex mt-4">
+            <Col
+              lg={12}
+              md={12}
+              className="footer-contact text-center text-md-start mt-5"
+            >
+              <h4>We Accept All</h4>
+              <div className="social-links d-flex mt-2">
                 <a>
                   <img src={card1} alt="card1" height={30} width={30} />
                 </a>
                 <a>
-                  <img src={card2} alt="card1" height={30} width={30} />
+                  <img src={card2} alt="card2" height={30} width={30} />
                 </a>
                 <a>
-                  <img src={card3} alt="card1" height={30} width={30} />
+                  <img src={card3} alt="card3" height={30} width={30} />
                 </a>
               </div>
-            </p>
+            </Col>
           </Col>
         </Row>
       </Container>

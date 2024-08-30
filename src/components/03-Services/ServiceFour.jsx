@@ -20,17 +20,9 @@ export default function ServiceFour() {
     <div>
       <div className="servicesOne">
         <div className="contactUsHeader">
-          <h3 className="mt-4">Service content for Transport Services:</h3>
-          <h5 className="mt-4">
-            “Your Trusted Partner in Transport Services ”
-          </h5>
-          <p className="mt-4">
-            At MoveNpack, we specialize in providing top-tier transportation
-            solutions tailored to meet the diverse needs of our clients. Whether
-            you're looking to move goods, people or anything in between our
-            comprehensive services ensure that your journey is smooth, safe and
-            efficient.
-          </p>
+          <h3 className="mt-4">{t("serviceFour.title")}</h3>
+          <h5 className="mt-4">{t("serviceFour.quote")}</h5>
+          <p className="mt-4">{t("serviceFour.description")}</p>
         </div>
 
         <Row className="serviceOne">
@@ -43,12 +35,10 @@ export default function ServiceFour() {
           </Col>
           <Col className="contents ms-lg-5 mt-4" lg={5} xs={12}>
             <h3>
-              <b>Our Specialization:</b>
+              <b>{t("serviceFour.pointHeader")}</b>
             </h3>
             <p>
-              <b>Ready to experience hassle-free transport services? :</b>{" "}
-              Contact us today to book your service or learn more about what we
-              offer.
+              <b>{t("serviceFour.Servoneheader")}</b> {t("serviceFour.ServOne")}
             </p>
             <Button
               className="getStartedBtn col-lg-5 col-12 mb-3"

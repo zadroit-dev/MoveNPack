@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Form,
+  Button,
+  OverlayTrigger,
+  Tooltip,
+} from "react-bootstrap";
 import "./contact.css";
 import { useTranslation } from "react-i18next";
-
+import { useNavigate } from "react-router-dom";
 import "../01-Home/home.css";
 
 export default function Contact() {
   const { t } = useTranslation("global");
-
   const [formHeight, setFormHeight] = useState(0);
 
   useEffect(() => {
@@ -16,6 +23,36 @@ export default function Contact() {
       setFormHeight(formElement.clientHeight);
     }
   }, []);
+
+  const socialMediaLinks = [
+    { name: "Facebook", iconClass: "bi bi-facebook", url: "#" },
+    { name: "Twitter", iconClass: "bi bi-twitter-x", url: "#" },
+    { name: "Instagram", iconClass: "bi bi-instagram", url: "#" },
+    { name: "LinkedIn", iconClass: "bi bi-linkedin", url: "#" },
+    { name: "YouTube", iconClass: "bi bi-youtube", url: "#" },
+  ];
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/get-a-quote");
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+
+    console.log(data);
+
+    const mailtoLink = `mailto:info@movenpack.ch?subject=Quote Request from ${formData.firstName} ${formData.lastName}&body=
+      Email: ${data.email}%0D%0A
+      Name: ${data.name}%0D%0A
+      Message: ${data.message}%0D%0A
+    `;
+    window.location.href = mailtoLink;
+  };
 
   return (
     <div className="contactUs">
@@ -54,21 +91,19 @@ export default function Contact() {
             <div className="service-item position-relative">
               <h3>{t("contactUs.follow")}</h3>
               <div className="social-links d-flex mt-4">
-                <a href="">
-                  <i className="bi bi-facebook"></i>
-                </a>
-                <a href="">
-                  <i className="bi bi-twitter-x"></i>
-                </a>
-                <a href="">
-                  <i className="bi bi-instagram"></i>
-                </a>
-                <a href="">
-                  <i className="bi bi-linkedin"></i>
-                </a>
-                <a href="">
-                  <i className="bi bi-youtube"></i>
-                </a>
+                {socialMediaLinks.map((link, index) => (
+                  <OverlayTrigger
+                    key={index}
+                    placement="top"
+                    overlay={
+                      <Tooltip id={`tooltip-${index}`}>{link.name}</Tooltip>
+                    }
+                  >
+                    <a href={link.url}>
+                      <i className={link.iconClass}></i>
+                    </a>
+                  </OverlayTrigger>
+                ))}
               </div>
             </div>
           </Col>
@@ -102,13 +137,16 @@ export default function Contact() {
             <Form
               id="contact-form"
               className="php-email-form"
+              onSubmit={handleSubmit} // Add onSubmit handler
               data-aos="fade-up"
               data-aos-delay="200"
             >
               <Row className="gy-4 mt-3">
                 <Col md={6}>
                   <Form.Group>
-                    <Form.Label className="pb-2">{t("contactUs.name")}</Form.Label>
+                    <Form.Label className="pb-2">
+                      {t("contactUs.name")}
+                    </Form.Label>
                     <Form.Control
                       type="text"
                       name="name"
@@ -120,7 +158,9 @@ export default function Contact() {
 
                 <Col md={6}>
                   <Form.Group>
-                    <Form.Label className="pb-2">{t("contactUs.email")}</Form.Label>
+                    <Form.Label className="pb-2">
+                      {t("contactUs.email")}
+                    </Form.Label>
                     <Form.Control
                       type="email"
                       name="email"
@@ -130,21 +170,11 @@ export default function Contact() {
                   </Form.Group>
                 </Col>
 
-                {/* <Col md={12}>
-                  <Form.Group>
-                    <Form.Label className="pb-2">Subject</Form.Label>
-                    <Form.Control
-                      type="text"
-                      name="subject"
-                      id="subject-field"
-                      required
-                    />
-                  </Form.Group>
-                </Col> */}
-
                 <Col md={12}>
                   <Form.Group>
-                    <Form.Label className="pb-2">{t("contactUs.message")}</Form.Label>
+                    <Form.Label className="pb-2">
+                      {t("contactUs.message")}
+                    </Form.Label>
                     <Form.Control
                       as="textarea"
                       name="message"
@@ -156,13 +186,45 @@ export default function Contact() {
                 </Col>
 
                 <Col md={12} className="text-center">
-                  <Button className="getStartedBtn col-lg-5">{t("contactUs.submit")}</Button>
+                  <Button className="getStartedBtn col-lg-5" type="submit">
+                    {t("contactUs.submit")}
+                  </Button>
                 </Col>
               </Row>
             </Form>
           </Col>
         </Row>
       </Container>
+
+      <div className="callToAction mt-5 mb-5">
+        <section
+          id="call-to-action"
+          className="call-to-action section dark-background"
+        >
+          <Container>
+            <Row
+              className="justify-content-center"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <Col xl={10}>
+                <div className="getReady text-center">
+                  <h3>{t("home.readyToMove")}</h3>
+                  <p>{t("home.readyToMoveCont")}</p>
+                  <Button
+                    className="getStartedBtn col-lg-5 col-12 mb-3"
+                    onClick={handleButtonClick}
+                  >
+                    {t("home.getStarted")}
+                  </Button>
+                  <p>Or</p>
+                  <p>{t("about.call")}</p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+      </div>
     </div>
   );
 }

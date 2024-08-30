@@ -64,6 +64,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 
 .footer .footer-links ul i {
@@ -136,7 +137,8 @@
   font-weight: bolder;
 }
 
-.footer-links h4 , .footer-contact h4{
+.footer-links h4,
+.footer-contact h4 {
   font-size: 22px;
   font-weight: bolder;
   text-align: start;
@@ -148,19 +150,18 @@
   transition: color 0.3s ease-in-out;
 }
 
-.footer-links ul li a:hover {
+.footer-links ul li:hover {
   color: #f76c45;
   font-weight: bolder;
   transition: color 0.3s ease-in-out;
 }
 
-
-.footer-contact p{
+.footer-contact p {
   font-size: 18px;
   text-align: start;
 }
 
-.footer-contact p a{
+.footer-contact p a {
   text-decoration: none;
   color: #f76c45;
 }

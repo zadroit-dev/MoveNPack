@@ -1,7 +1,15 @@
 import React, { useState } from "react";
-import { Container, Nav, Navbar, NavDropdown, Button } from "react-bootstrap";
+import {
+  Container,
+  Nav,
+  Navbar,
+  NavDropdown,
+  Button,
+  OverlayTrigger,
+  Tooltip,
+} from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 import "./navbar.css";
 import Spinners from "../../pages/Spinner/Spinners";
@@ -13,7 +21,7 @@ export default function NavBar() {
   const { t, i18n } = useTranslation("global");
   const [loading, setLoading] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const handleChangeLang = (lang) => {
     setLoading(true);
@@ -24,38 +32,48 @@ export default function NavBar() {
     }, 1500);
   };
 
+  const handleNavClick = (path) => {
+    navigate(path);
+    setIsExpanded(false);
+  };
+
   const currentLang = i18n.language;
   const languageIcon = currentLang === "en" ? english : german;
+
+  const socialMediaLinks = [
+    { name: "Facebook", iconClass: "bi bi-facebook", url: "#" },
+    { name: "Twitter", iconClass: "bi bi-twitter-x", url: "#" },
+    { name: "Instagram", iconClass: "bi bi-instagram", url: "#" },
+  ];
 
   return (
     <div>
       <Navbar className="bg-body-tertiary">
         <Container>
-          <Navbar.Text>{t("about.call")}</Navbar.Text>
+          <Navbar.Text>
+            <a
+              href="tel:+41789235590"
+              style={{ textDecoration: "none", fontWeight: "bold" }}
+            >
+              {t("about.call")}
+            </a>
+          </Navbar.Text>
           <Navbar.Text>
             {" "}
             <div className="social-links d-flex">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bi bi-facebook"></i>
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bi bi-twitter-x"></i>
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bi bi-instagram"></i>
-              </a>
+              {socialMediaLinks.map((link, index) => (
+                <OverlayTrigger
+                  key={index}
+                  placement="top"
+                  overlay={
+                    <Tooltip id={`tooltip-${index}`}>{link.name}</Tooltip>
+                  }
+                >
+                  <a href={link.url}>
+                    <i className={link.iconClass}></i>
+                  </a>
+                </OverlayTrigger>
+              ))}
             </div>
           </Navbar.Text>
         </Container>
@@ -63,22 +81,22 @@ export default function NavBar() {
       {loading && <Spinners />}
       <Navbar expand="lg" fixed="top" expanded={isExpanded}>
         <Container>
-          <Navbar.Brand onClick={() => navigate("/")}>
+          <Navbar.Brand onClick={() => handleNavClick("/")}>
             <img
               alt="MoveNPack Logo"
               src={logo}
-              width="89"
-              height="89"
+              width="95"
+              height="95"
               className="logo me-3"
             />
             MoveNPack
           </Navbar.Brand>
           <Button
             variant="outline-danger"
-            onClick={() => navigate("/get-a-quote")}
+            onClick={() => handleNavClick("/get-a-quote")}
             className="d-lg-none"
           >
-            Get a Quote
+            {t("nav.getAQuote")}
           </Button>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
@@ -92,49 +110,55 @@ export default function NavBar() {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link className="me-5" onClick={() => navigate("/")}>
+              <Nav.Link className="me-5" onClick={() => handleNavClick("/")}>
                 {t("nav.home")}
               </Nav.Link>
               <div className="nav-divider d-lg-none"></div>
-              <Nav.Link className="me-5" onClick={() => navigate("/about")}>
+              <Nav.Link
+                className="me-5"
+                onClick={() => handleNavClick("/about")}
+              >
                 {t("nav.aboutUs")}
               </Nav.Link>
               <div className="nav-divider d-lg-none"></div>
               <NavDropdown
                 className="me-5 nav-dropdown"
-                title="Services"
+                title={t("nav.services")}
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Item onClick={() => navigate("/services")}>
-                  Our Services
+                <NavDropdown.Item onClick={() => handleNavClick("/services")}>
+                  {t("home.ourServices")}
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
-                  onClick={() => navigate("/moving-and-packing")}
+                  onClick={() => handleNavClick("/moving-and-packing")}
                 >
-                  Moving & Packing
+                  {t("footer.moveNPack")}
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
-                  onClick={() => navigate("/professional-cleaning")}
+                  onClick={() => handleNavClick("/professional-cleaning")}
                 >
-                  Professional Cleaning
+                  {t("footer.professionalClean")}
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
-                  onClick={() => navigate("/transport-service")}
+                  onClick={() => handleNavClick("/transport-service")}
                 >
-                  Change Packing only to - Transport Services
+                  {t("footer.transportService")}
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
-                  onClick={() => navigate("/cleaning-and-moving")}
+                  onClick={() => handleNavClick("/cleaning-and-moving")}
                 >
-                  Cleaning & Moving
+                  {t("footer.cleaningNMov")}
                 </NavDropdown.Item>
               </NavDropdown>
               <div className="nav-divider d-lg-none"></div>
-              <Nav.Link className="me-5" onClick={() => navigate("/contact")}>
+              <Nav.Link
+                className="me-5"
+                onClick={() => handleNavClick("/contact")}
+              >
                 {t("nav.contactUs")}
               </Nav.Link>
               <Nav.Link
@@ -156,7 +180,7 @@ export default function NavBar() {
             </Nav>
             <Button
               variant="outline-danger"
-              onClick={() => navigate("/get-a-quote")}
+              onClick={() => handleNavClick("/get-a-quote")}
               className="d-none d-lg-block"
             >
               {t("nav.getAQuote")}

@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Image } from "react-bootstrap";
 import introImg2 from "../../assets/home/introImgTwo.jpg";
 import introImg1 from "../../assets/home/introImgOne.jpg";
 import { useTranslation } from "react-i18next";
 import "./about.css";
+
+import aim from "../../assets/about/aim.jpg";
+import goals from "../../assets/about/goals.jpeg";
 
 export default function About() {
   const { t } = useTranslation("global");
@@ -43,16 +46,23 @@ export default function About() {
           <p>{t("about.description")}</p>
         </div>
 
-        <Row className="whoWeAre aboutCont">
-          <Col lg={4} xs={12}>
-            <img
+        <Row
+          className="whoWeAre aboutCont"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <Col lg={5} xs={12}>
+            <Image
               className="introImg1 img-fluid"
               src={introImg2}
               alt="introImage"
+              rounded
             />
           </Col>
           <Col className="contents ms-lg-5" lg={5} xs={12}>
-            <h1 className="text-align-center aboutTexts mt-5">{t("about.title")}</h1>
+            <h1 className="text-align-center aboutTexts mt-5">
+              {t("about.title")}
+            </h1>
             <p>{t("about.aboutUsDesc")}</p>
 
             <section id="stats" className="stats section light-background">
@@ -96,43 +106,37 @@ export default function About() {
         </Row>
 
         <section id="about" className="about section">
-          <div className="container">
-            <div className="row gy-4">
-              <div
-                className="aboutTexts col-lg-6 text-align-center"
+          <Container>
+            <Row className="gy-4">
+              <Col
+                lg={5}
+                className="aboutTexts text-align-center"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <img
-                  src={introImg1}
-                  className="img-fluid rounded-4 mb-4"
-                  alt=""
-                />
+                <Image src={aim} className="img-fluid rounded-4 mb-5" alt="" />
                 <h3>{t("about.aim")}</h3>
                 <span>{t("about.mission")}</span>
                 <p>{t("about.missionDesc")}</p>
-              </div>
-              <div
-                className="col-lg-6 content text-align-center"
+              </Col>
+              <Col
+                lg={5}
+                className="content text-align-center"
                 data-aos="fade-up"
                 data-aos-delay="250"
               >
-                <div className="content ps-0 ps-lg-5">
+                <div className="content ps-0 ps-lg-5 mt-5">
                   <h3>{t("about.ourGoals")}</h3>
                   <span>{t("about.companyGoals")}</span>
                   <p>{t("about.goalsDesc")}</p>
 
-                  <div className="position-relative mt-4">
-                    <img
-                      src={introImg1}
-                      className="img-fluid rounded-4"
-                      alt=""
-                    />
+                  <div className="position-relative mt-5">
+                    <Image src={goals} className="img-fluid rounded-4" alt="" />
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+              </Col>
+            </Row>
+          </Container>
         </section>
       </div>
     </div>

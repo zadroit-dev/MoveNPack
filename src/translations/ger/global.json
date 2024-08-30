@@ -42,6 +42,20 @@
     "reasonThreeHeader": "Professionelles Team",
     "reasonThree": "Kompetente Umzugshelfer und Reinigungskräfte, die sich für Ihre Zufriedenheit und Ihren Seelenfrieden einsetzen."
   },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "description": "„Umzug und Reinigung können stressig sein, müssen es aber nicht. Wir haben eine Liste mit häufig gestellten Fragen zusammengestellt, um Ihnen zu helfen, unsere Dienstleistungen zu verstehen und Ihren Übergang so reibungslos wie möglich zu gestalten. Egal, ob Sie sich über unseren Prozess wundern Ob Sie wissen möchten, welche Preise anfallen oder was Sie am Umzugstag erwartet, wir sind für Sie da.“",
+    "quesOne": "Welche Dienstleistungen bietet MoveNPack an?",
+    "answerOne": "MoveNPack bietet ein umfassendes Leistungsspektrum, darunter private und gewerbliche Umzüge, professionelle Verpackung, Tiefenreinigung, Möbelmontage, Transportdienste, Lagerlösungen und spezielle Handhabung von Antiquitäten und Spezialartikeln.",
+    "quesTwo": "Wie läuft die Buchung eines Umzugs- oder Reinigungsdienstes ab?",
+    "answerTwo": "Kontaktieren Sie uns einfach über unsere Website oder rufen Sie uns direkt an. Wir besprechen Ihre spezifischen Bedürfnisse, erstellen ein individuelles Angebot und planen Ihren Service zu einem für Sie passenden Zeitpunkt.",
+    "quesThree": "Welche Bereiche bedienen Sie?",
+    "answerThree": "Wir bieten sowohl lokale als auch Fernumzugsdienste an. Egal, ob Sie quer durch die Stadt oder in eine andere Stadt umziehen, wir verfügen über die Ressourcen und das Fachwissen, um einen reibungslosen Übergang zu gewährleisten.",
+    "quesFour": "Stellen Sie Verpackungsmaterial zur Verfügung?",
+    "answerFour": "Ja, wir stellen alle notwendigen Verpackungsmaterialien zur Verfügung, darunter Kartons, Luftpolsterfolie, Klebeband und Schutzhüllen, um sicherzustellen, dass Ihre Sachen sicher verpackt sind.",
+    "quesFive": "Kann ich Umzugs- und Reinigungsdienste kombinieren?",
+    "answerFive": "Absolut! Wir bieten integrierte Umzugs- und Reinigungspakete an, die Ihnen den Umzug erleichtern, indem sie alles vom Einpacken bis zur Reinigung Ihres alten und neuen Zuhauses übernehmen."
+  },
   "about": {
     "title": "Über uns",
     "talioredSolutions": "Maßgeschneiderte Lösungen",
@@ -112,6 +126,7 @@
   },
   "quote": {
     "title": "Ein Angebot einholen",
+    "quoteDesc": "Fordern Sie in wenigen Minuten ein detailliertes Angebot an. Geben Sie präzise an Details für ein individuelles, kostenloses und unverbindliches Angebot. Jedes Detail ist wichtig, damit wir das perfekte Angebot erstellen können Du. Wir werden schnell antworten.",
     "name": "Name",
     "first": "Erste",
     "last": "Zuletzt",
@@ -127,6 +142,10 @@
     "materials": "Erforderliches Verpackungsmaterial",
     "message": "Ihre Nachricht",
     "submit": "Einreichen",
+    "fromDate": "ab Dienstdatum",
+    "toDate": "Bis zum Dienstdatum"
+  },
+  "quoteOptions": {
     "efh": "EFH",
     "ground": "Erdgeschoss",
     "mezzanine": "Mezzanin",
@@ -165,7 +184,13 @@
     "contact": "Kontakt:",
     "mobile": "Telefon",
     "email": "E-Mail",
-    "copyright": "Urheberrecht © 2024 MoveNPack"
+    "copyright": "Urheberrecht © 2024 MoveNPack",
+    "moveNPack": "Umzug und Verpackung",
+    "professionalClean": "Professionelle Reinigung",
+    "transportService": "Transportdienstleistungen",
+    "cleaningNMov": "Reinigung & Umzug",
+    "useFulLink": "Nützliche Links",
+    "weAccept": "We Accept All"
   },
   "contactUs": {
     "getInTouch": "Kontakt aufnehmen",
@@ -189,5 +214,49 @@
     "getStart": "Jetzt loslegen",
     "or": "Oder",
     "call": "Anruf: +41789235590"
+  },
+  "serviceOne": {
+    "title": "Umzug und Verpackung",
+    "quote": "„Jedes Mal sanfte Übergänge“",
+    "description": "Ein Umzug kann eine stressige Erfahrung sein, aber mit unserem kompetenten Umzugs- und Verpackungsservice können Sie sich entspannen und die schwere Arbeit uns überlassen. Unser Team ist bestrebt, dafür zu sorgen, dass Ihre Sachen sorgfältig behandelt werden und sicher an Ihrem neuen Standort ankommen.",
+    "pointHeader": "Unsere Spezialisierung:",
+    "ServOneHeader": "Umfassende Verpackungsdienstleistungen:",
+    "ServOne": "Unsere professionellen Packer verwenden hochwertige Materialien, um Ihre Artikel zu schützen.",
+    "ServTwoHeader": "Effiziente Umzugslösungen:",
+    "ServTwo": "Ganz gleich, ob es sich um einen lokalen Umzug oder einen Fernumzug handelt, unsere erfahrenen Umzugsunternehmen kümmern sich effizient und präzise um jeden Aspekt Ihres Umzugs.",
+    "ServThreeHeader": "Sicherer Transport:",
+    "ServThree": "Unsere modernen LKWs sind für den sicheren Transport Ihrer Sachen ausgestattet und minimieren das Risiko von Schäden."
+  },
+  "serviceTwo": {
+    "title": "Professionelle Reinigungsdienste",
+    "quote": "„Jedes Mal blitzsauber“",
+    "description": "Ein sauberer Raum ist für Komfort und Wohlbefinden unerlässlich. Unsere professionellen Reinigungsdienste erfüllen die höchsten Standards und sorgen für eine gründliche und sorgfältige Reinigung Ihres Zuhauses oder Büros.",
+    "pointHeader": "Zu unseren Dienstleistungen gehören:",
+    "Servoneheader": "Regelmäßige Reinigung:",
+    "ServOne": "Halten Sie Ihren Raum mit unseren planmäßigen Reinigungsdiensten stets sauber und frisch. Perfekt für die Aufrechterhaltung einer gesunden Umwelt ",
+    "ServTwoHeader": "tiefenreinigung:",
+    "ServTwo": "Unser umfassender Reinigungsservice zielt auf jeden Winkel Ihres Eigentums ab, beseitigt schwer zugängliche Bereiche und beseitigt Schmutz und Allergene",
+    "ServThreeHeader": "Spezialreinigung",
+    "ServThree": "Von Teppichen und Polstern bis hin zu Fenstern und Geräten sorgen unsere spezialisierten Reinigungsdienste dafür, dass jeder Teil Ihrer Immobilie makellos ist "
+  },
+  "serviceThree": {
+    "title": "Reinigungs- und Umzugsdienste:",
+    "quote": "„Das Beste aus beiden Welten“",
+    "description": "Für diejenigen, die den Komfort einer Kombination aus Umzugs- und Reinigungsdiensten wünschen, bieten wir eine nahtlose Lösung, die alles in einem Schritt erledigt. Zu unseren integrierten Reinigungs- und Umzugsdiensten gehören:",
+    "pointHeader": "Unsere Spezialisierung:",
+    "Servoneheader": "Reinigung vor dem Umzug:",
+    "ServOne": "Bevor Sie ausziehen, überlassen Sie uns die Reinigung, um sicherzustellen, dass Ihre alte Wohnung makellos bleibt.",
+    "ServTwoHeader": "Reinigung nach dem Umzug:",
+    "ServTwo": "Sobald Sie sich eingelebt haben, wird unser Team Ihr neues Zuhause gründlich reinigen, um es bezugsfertig zu machen.",
+    "ServThreeHeader": "Einzugs-/Auszugspakete:",
+    "ServThree": "Wählen Sie unsere umfassenden Pakete, die sowohl den Umzug als auch die Reinigung abdecken, um Ihren Übergang zu vereinfachen und Ihnen Sicherheit zu geben."
+  },
+  "serviceFour": {
+    "title": "Leistungsinhalte für Transportdienstleistungen:",
+    "quote": "„Ihr vertrauenswürdiger Partner für Transportdienstleistungen“",
+    "description": "Bei MoveNpack sind wir auf die Bereitstellung erstklassiger Transportlösungen spezialisiert, die auf die unterschiedlichen Bedürfnisse unserer Kunden zugeschnitten sind. Ganz gleich, ob Sie Güter, Personen oder irgendetwas dazwischen transportieren möchten – unsere umfassenden Dienstleistungen sorgen dafür, dass Ihre Reise reibungslos, sicher und effizient verläuft.",
+    "pointHeader": "Unsere Spezialisierung:",
+    "Servoneheader": "Sind Sie bereit, stressfreie Transportdienste zu erleben?",
+    "ServOne": "Kontaktieren Sie uns noch heute, um Ihren Service zu buchen oder mehr über unser Angebot zu erfahren."
   }
 }

@@ -42,6 +42,20 @@
     "reasonThreeHeader": "Professional Team",
     "reasonThree": "Skilled movers and cleaners dedicated to your satisfaction and peace of mind."
   },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "“Moving and cleaning can be stressful, but it doesn't have to be. We've compiled a list of frequently asked questions to help you understand our services and make your transition as smooth as possible. Whether you're wondering about our process, pricing, or what to expect on moving day, we've got you covered.“",
+    "quesOne":"What services does MoveNPack offer?",
+    "answerOne":" MoveNPack offers a comprehensive range of services including residential and commercial moving, professional packing, deep cleaning, furniture assembly, transport services, storage solutions, and specialized handling for antiques and specialty items.",
+    "quesTwo":"How does the process of booking a move or cleaning service work?",
+    "answerTwo":" Simply contact us through our website or call us directly. We'll discuss your specific needs, provide a personalized quote, and schedule your service at a time that's convenient for you.",
+    "quesThree":"What areas do you serve?",
+    "answerThree":"We offer both local and long-distance relocation services. Whether you're moving across town or to a different city, we have the resources and expertise to ensure a seamless transition.",
+    "quesFour":"Do you provide packing materials?",
+    "answerFour":"Yes, we provide all the necessary packing materials including boxes, bubble wrap, packing tape, and protective covers to ensure your belongings are securely packed.",
+    "quesFive":"Can I combine moving and cleaning services?",
+    "answerFive":"Absolutely! We offer integrated moving and cleaning packages that make your move easier by handling everything from packing to cleaning your old and new homes."
+  },
   "about": {
     "title": "About Us",
     "talioredSolutions": "Tailored Solutions",
@@ -112,6 +126,7 @@
   },
   "quote": {
     "title": "Get a Quote",
+    "quoteDesc": "Request a detailed quote in few minutes. Provide accurate details for a personalized, free, and no-obligation offer. Every detail matters to help us create the perfect quote for you. We’ll respond quickly.",
     "name": "Name",
     "first": "First",
     "last": "Last",
@@ -126,7 +141,9 @@
     "additional": "Additonal person Required for help",
     "materials": "Packing Materials Required",
     "message": "Your Message",
-    "submit": "Submit"
+    "submit": "Submit",
+    "fromDate": "From Date of Services",
+    "toDate": "To Date of Services"
   },
   "quoteOptions": {
     "efh": "EFH",
@@ -167,7 +184,13 @@
     "contact": "Contact",
     "mobile": "Mobile",
     "email": "Email",
-    "copyright": "Copyright © 2024 MoveNPack"
+    "copyright": "Copyright © 2024 MoveNPack",
+    "moveNPack": "Moving & Packing",
+    "professionalClean": "Professional Cleaning",
+    "transportService": "Transport Services",
+    "cleaningNMov": "Cleaning & Moving",
+    "useFulLink": "Useful Links",
+    "weAccept": "Wir akzeptieren alles"
   },
   "contactUs": {
     "getInTouch": "Get In Touch",
@@ -191,5 +214,49 @@
     "getStart": "Get Started Now",
     "or": "Or",
     "call": "Call: +41789235590"
+  },
+  "serviceOne": {
+    "title": "Moving and Packing",
+    "quote": "“Smooth Transitions, Every Time”",
+    "description": "Moving can be a stressful experience, but with our expert moving and packing services, you can relax and leave the heavy lifting to us. Our team is dedicated to ensure your belongings are handled with care and arrive at your new location safely.",
+    "pointHeader": "Our Specialization:",
+    "ServOneHeader": "Comprehensive Packing Services:",
+    "ServOne": "Our professional packers use high-quality materials to protect your items.",
+    "ServTwoHeader": "Efficient Moving Solutions: ",
+    "ServTwo": "Whether it's a local move or a long-distance relocation, our experienced movers will manage every aspect of your move efficiently and precisely.",
+    "ServThreeHeader": "Secure Transportation:",
+    "ServThree": "Our modern trucks are equipped to transport your belongings safely and securely, minimizing any risk of damage."
+  },
+  "serviceTwo": {
+    "title": "Professional Cleaning Services",
+    "quote": "“Sparkling Clean, Every Time”",
+    "description": "A clean space is essential for comfort and well-being. Our professional cleaning services are designed to meet the highest standards, providing a thorough and meticulous cleaning for your home or office.",
+    "pointHeader": "Our services include:",
+    "Servoneheader": "Regular Cleaning:",
+    "ServOne": "Keep your space consistently clean and fresh with our scheduled cleaning services. Perfect for maintaining a healthy environment",
+    "ServTwoHeader": "Deep Cleaning: ",
+    "ServTwo": "Our in-depth cleaning service targets every corner of your property, addressing hard-to-reach areas and eliminating grime and allergens",
+    "ServThreeHeader": "Specialized Cleaning",
+    "ServThree": "From carpet and upholstery to windows and appliances, our specialized cleaning services ensure that every part of your property is pristine"
+  },
+  "serviceThree": {
+    "title": "Cleaning and Moving Services:",
+    "quote": "„Das Beste aus beiden Welten“",
+    "description": "For those who want the convenience of combining moving and cleaning services, we offer a seamless solution that takes care of everything in one go. Our integrated cleaning and moving services include:",
+    "pointHeader": "Our Specialization:",
+    "Servoneheader": "Pre-Move Cleaning:",
+    "ServOne": "Before you move out, let us handle the cleaning to ensure your old place is left spotless.",
+    "ServTwoHeader": "Post-Move Cleaning:",
+    "ServTwo": "Once you’re settled in, our team will give your new home a thorough clean to make it move-in ready.",
+    "ServThreeHeader": "Move-In/Out Packages: ",
+    "ServThree": "Choose our comprehensive packages that cover both moving and cleaning to streamline your transition and give you peace of mind."
+  },
+  "serviceFour": {
+    "title": "Service content for Transport Services:",
+    "quote": "“Your Trusted Partner in Transport Services ”",
+    "description": "At MoveNpack, we specialize in providing top-tier transportation solutions tailored to meet the diverse needs of our clients. Whether you're looking to move goods, people or anything in between our comprehensive services ensure that your journey is smooth, safe and efficient.",
+    "pointHeader": "Our Specialization:",
+    "Servoneheader": "Ready to experience hassle-free transport services?",
+    "ServOne": "Contact us today to book your service or learn more about what we offer."
   }
 }

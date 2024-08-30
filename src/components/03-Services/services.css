@@ -137,6 +137,9 @@
   height: 100%;
 }
 
+.service .service-item .card-body .card-text{
+  text-align: center;
+}
 .service .service-item .card-body {
   display: flex;
   flex-direction: column;
@@ -155,16 +158,24 @@
   height: 100%;
 }
 
+.post-card .card-title {
+  color: #f76c45;
+  text-align: center;
+}
+
+.post-meta {
+  text-align: center;
+}
+.post-value {
+  font-size: 17px;
+}
+
 .section-title h2 {
   font-size: 2rem;
 }
 
 .section-title p {
   font-size: 1.2rem;
-}
-
-.post-meta {
-  margin-top: 10px;
 }
 
 .post-author {

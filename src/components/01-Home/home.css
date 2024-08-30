@@ -75,15 +75,18 @@
   justify-content: center;
 }
 
-.whoWeAre .contents p{
+.whoWeAre .contents p {
   font-size: 17px;
 }
-
 
 .services .img img {
   transition: 0.6s;
 }
 
+
+.homeIntroServImgs{
+  height: 400px;
+}
 .services .details {
   background: color-mix(in srgb, #ffffff, transparent 5%);
   padding: 50px 30px;
@@ -325,9 +328,14 @@
   margin-top: auto;
 }
 
-.faq .content h3 {
-  font-weight: 400;
-  font-size: 34px;
+.faqHeader .content h3 {
+  font-weight: bolder;
+  font-size: 45px;
+  color: #f76c45;
+}
+
+.faq .container .row{
+  justify-content: center;
 }
 
 .faq .content p {
@@ -411,37 +419,47 @@
   color: var(--accent-color);
 }
 
-
-.faqHeader{
+.faqHeader {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.faqItems{
+.faqItems {
   padding: 50px 10px;
 }
 
-
-
-.service-item .details a{
+.service-item .details a {
   text-decoration: none;
-  color:#f76c45 ;
+  color: #f76c45;
 }
 
-
-.homeQuote{
+.homeQuote {
   justify-content: center;
   display: flex;
   padding: 80px 0px;
   background-color: #f9f3eb;
 }
 
-.quoteDesc{
+.quoteDesc {
   margin: 20px;
 }
 
-.quoteDesc .emailForm p{
+.quoteDesc .emailForm p {
   font-size: 19px;
   text-align: justify;
+}
+
+.accordion-header button {
+  background-color: #f9f3eb;
+}
+
+.accordion-button {
+  background-color: white;
+  color: black;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f9f3eb;
+  color: black;
 }

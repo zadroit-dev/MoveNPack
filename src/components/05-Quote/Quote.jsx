@@ -1,12 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./quote.css";
 import quoteBg from "../../assets/images/quote-bg.jpg";
 
 export default function Quote() {
   const { t } = useTranslation("global");
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    email: "",
+    streetFrom: "",
+    cityFrom: "",
+    roomsFrom: "",
+    floorFrom: "",
+    streetTo: "",
+    cityTo: "",
+    roomsTo: "",
+    floorTo: "",
+    driver: "",
+    additional: "",
+    materials: "",
+    fromDate: "",
+    toDate: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("Mailto", formData);
+
+    const mailtoLink = `mailto:info@movenpack.ch?subject=Quote Request from ${formData.firstName} ${formData.lastName}&body=
+      First Name: ${formData.firstName}%0D%0A
+      Last Name: ${formData.lastName}%0D%0A
+      Phone: ${formData.phone}%0D%0A
+      Email: ${formData.email}%0D%0A
+      From Address: ${formData.streetFrom}, ${formData.cityFrom}%0D%0A
+      Rooms: ${formData.roomsFrom}%0D%0A
+      Floor: ${formData.floorFrom}%0D%0A
+      To Address: ${formData.streetTo}, ${formData.cityTo}%0D%0A
+      Rooms: ${formData.roomsTo}%0D%0A
+      Floor: ${formData.floorTo}%0D%0A
+      Driver: ${formData.driver}%0D%0A
+      Additional: ${formData.additional}%0D%0A
+      Materials: ${formData.materials}%0D%0A
+      From Date: ${formData.fromDate}%0D%0A
+      To Date: ${formData.toDate}%0D%0A
+      Message: ${formData.message}`;
+
+    window.location.href = mailtoLink;
+  };
 
   return (
     <div className="getAQuote">
@@ -20,34 +73,31 @@ export default function Quote() {
             ></Col>
 
             <Col lg={7} data-aos="fade-up" data-aos-delay="200">
-              <Form className="emailForm">
-                <h3>Get a quote</h3>
-                <p>
-                  Request a detailed quote in few minutes. Provide accurate
-                  details for a personalized, free, and no-obligation offer.
-                  Every detail matters to help us create the perfect quote for
-                  you. We’ll respond quickly.
-                </p>
+              <Form className="emailForm" onSubmit={handleSubmit}>
+                <h3>{t("quote.title")}</h3>
+                <p>{t("quote.quoteDesc")}</p>
 
                 <Row className="gy-4 mt-3">
                   <Col lg={12}>
-                    <h4>Details</h4>
+                    <h4>{t("quote.name")}</h4>
                   </Col>
                   <Col md={6}>
                     <Form.Control
                       type="text"
-                      name="name"
-                      placeholder="First Name"
+                      name="firstName"
+                      placeholder={t("quote.first")}
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
                   <Col md={6}>
                     <Form.Control
                       type="text"
-                      name="name"
-                      placeholder="Last Name"
+                      name="lastName"
+                      placeholder={t("quote.last")}
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
@@ -55,8 +105,9 @@ export default function Quote() {
                     <Form.Control
                       type="text"
                       name="phone"
-                      placeholder="Phone"
+                      placeholder={t("quote.phone")}
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
@@ -64,50 +115,53 @@ export default function Quote() {
                     <Form.Control
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder={t("quote.email")}
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
                   <Col lg={12}>
-                    <h4>Address</h4>
+                    <h4>{t("quote.from")}</h4>
                   </Col>
-
-                  <h4>From</h4>
 
                   <Col md={3}>
                     <Form.Control
                       type="text"
-                      name="street"
-                      placeholder="Street / No."
+                      name="streetFrom"
+                      placeholder={t("quote.from")}
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
                   <Col md={3}>
                     <Form.Control
                       type="text"
-                      name="city"
-                      placeholder="Postcode / City"
+                      name="cityFrom"
+                      placeholder={t("quote.post")}
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
                   <Col md={3}>
                     <Form.Control
-                      type="text"
-                      name="rooms"
-                      placeholder="Number of Rooms"
+                      type="number"
+                      name="roomsFrom"
+                      placeholder={t("quote.rooms")}
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
                   <Col md={3}>
                     <Form.Select
-                      name="floor"
+                      name="floorFrom"
                       required
                       className="form-control"
                       defaultValue=""
+                      onChange={handleChange}
                     >
                       <option value="" disabled>
                         {t("quote.floor")}
@@ -121,41 +175,48 @@ export default function Quote() {
                       ))}
                     </Form.Select>
                   </Col>
-                  <h4>To</h4>
+
+                  <Col lg={12}>
+                    <h4>{t("quote.to")}</h4>
+                  </Col>
 
                   <Col md={3}>
                     <Form.Control
                       type="text"
-                      name="street"
-                      placeholder="Street / No."
+                      name="streetTo"
+                      placeholder={t("quote.from")}
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
                   <Col md={3}>
                     <Form.Control
                       type="text"
-                      name="city"
-                      placeholder="Postcode / City"
+                      name="cityTo"
+                      placeholder={t("quote.post")}
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
                   <Col md={3}>
                     <Form.Control
-                      type="text"
-                      name="rooms"
-                      placeholder="Number of Rooms"
+                      type="number"
+                      name="roomsTo"
+                      placeholder={t("quote.rooms")}
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
                   <Col md={3}>
                     <Form.Select
-                      name="floor"
+                      name="floorTo"
                       required
                       className="form-control"
                       defaultValue=""
+                      onChange={handleChange}
                     >
                       <option value="" disabled>
                         {t("quote.floor")}
@@ -176,6 +237,7 @@ export default function Quote() {
                       required
                       className="form-control"
                       defaultValue=""
+                      onChange={handleChange}
                     >
                       <option value="" disabled>
                         {t("quote.driver")}
@@ -196,6 +258,7 @@ export default function Quote() {
                       required
                       className="form-control"
                       defaultValue=""
+                      onChange={handleChange}
                     >
                       <option value="" disabled>
                         {t("quote.additional")}
@@ -216,6 +279,7 @@ export default function Quote() {
                       required
                       className="form-control"
                       defaultValue=""
+                      onChange={handleChange}
                     >
                       <option value="" disabled>
                         {t("quote.materials")}
@@ -231,43 +295,48 @@ export default function Quote() {
                   </Col>
 
                   <Col md={6}>
-                    <h4>From Date of Services</h4>
+                    <h4>{t("quote.fromDate")}</h4>
                     <Form.Control
-                    className="mt-4"
-                      type="datetime-local"
+                      className="mt-4"
+                      type="dateTime-local"
                       name="fromDate"
-                      placeholder="Select date and time"
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
                   <Col md={6}>
-                    <h4>To Date of Services</h4>
+                    <h4>{t("quote.toDate")}</h4>
                     <Form.Control
-                    className="mt-4"
-                      type="datetime-local"
+                      className="mt-4"
+                      type="dateTime-local"
                       name="toDate"
-                      placeholder="Select date and time"
                       required
+                      onChange={handleChange}
                     />
                   </Col>
 
                   <Col lg={12}>
-                    <h4>Your Message</h4>
-                  </Col>
-                  <Col xs={12}>
                     <Form.Control
                       as="textarea"
+                      rows={5}
                       name="message"
-                      rows="6"
-                      placeholder="Message"
-                      required
+                      placeholder={t("quote.message")}
+                      onChange={handleChange}
                     />
                   </Col>
 
-                  <Col xs={12} className="text-center">
-                    <Button className="getStartedBtn" lg={5}>
-                      Get A Quote
+                  <Col lg={12} className="text-center submitBtn">
+                    <Button
+                      className="getStartedBtn"
+                      type="submit"
+                      style={{
+                        background: "#f76c45",
+                        borderColor: "#f76c45",
+                        color: "white",
+                      }}
+                    >
+                      {t("quote.submit")}
                     </Button>
                   </Col>
                 </Row>

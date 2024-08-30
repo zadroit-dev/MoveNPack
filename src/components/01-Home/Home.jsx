@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Row, Col, Card, Button, Form, Container } from "react-bootstrap";
+import {
+  Accordion,
+  Row,
+  Col,
+  Card,
+  Button,
+  Form,
+  Container,
+} from "react-bootstrap";
 
 import { useNavigate, Link } from "react-router-dom";
 
 import introImg1 from "../../assets/home/introImgOne.jpg";
 import introImg2 from "../../assets/home/introImgTwo.jpg";
-import profile from "../../assets/images/images/userImg.jpg";
+import profile1 from "../../assets/images/images/userImg.jpg";
+import profile2 from "../../assets/images/test2.jpg";
+
+import img1 from "../../assets/services/img2.jpeg";
+import img2 from "../../assets/services/img3.png";
+import img3 from "../../assets/services/img8.jpg";
+import img4 from "../../assets/services/img4.jpeg";
 
 import "./home.css";
 
@@ -23,14 +37,64 @@ export default function Home() {
     {
       key: "home.testimonialOne",
       author: "Eric Johnson",
-      profileImg: profile,
+      profileImg: profile1,
     },
     {
       key: "home.testimonialTwo",
-      author: "Anna Smith",
-      profileImg: profile,
+      author: "Mark Davis",
+      profileImg: profile2,
     },
   ];
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    email: "",
+    streetFrom: "",
+    cityFrom: "",
+    roomsFrom: "",
+    floorFrom: "",
+    streetTo: "",
+    cityTo: "",
+    roomsTo: "",
+    floorTo: "",
+    driver: "",
+    additional: "",
+    materials: "",
+    fromDate: "",
+    toDate: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("Mailto", formData);
+
+    const mailtoLink = `mailto:info@movenpack.ch?subject=Quote Request from ${formData.firstName} ${formData.lastName}&body=
+      First Name: ${formData.firstName}%0D%0A
+      Last Name: ${formData.lastName}%0D%0A
+      Phone: ${formData.phone}%0D%0A
+      Email: ${formData.email}%0D%0A
+      From Address: ${formData.streetFrom}, ${formData.cityFrom}, Rooms: ${formData.roomsFrom}, Floor: ${formData.floorFrom}%0D%0A
+      To Address: ${formData.streetTo}, ${formData.cityTo}, Rooms: ${formData.roomsTo}, Floor: ${formData.floorTo}%0D%0A
+      Driver: ${formData.driver}%0D%0A
+      Additional: ${formData.additional}%0D%0A
+      Materials: ${formData.materials}%0D%0A
+      From Date: ${formData.fromDate}%0D%0A
+      To Date: ${formData.toDate}%0D%0A
+      Message: ${formData.message}`;
+
+    window.location.href = mailtoLink;
+  };
 
   return (
     <Container fluid className="introContents">
@@ -81,8 +145,9 @@ export default function Home() {
           </div>
 
           <div className="container" data-aos="fade-up" data-aos-delay="100">
-            <Row className="gy-5">
+            <Row className="gy-5 serviceIntro">
               <Col
+                className="serviceIntroCont"
                 xl={5}
                 md={6}
                 xs={11}
@@ -91,12 +156,16 @@ export default function Home() {
               >
                 <div className="service-item">
                   <div className="img">
-                    <img src={introImg1} className="img-fluid m-3" alt="img" />
+                    <img
+                      src={img1}
+                      className="img-fluid m-3 homeIntroServImgs"
+                      alt="img"
+                    />
                   </div>
                   <div className="details position-relative">
                     <h3>{t("home.ourServicesCardOneHeader")}</h3>
                     <p>{t("home.ourServicesCardOneCont")}</p>
-                    <Link to="/services">
+                    <Link to="/moving-and-packing">
                       <h5 className="mt-3">{t("home.readmore")}</h5>
                     </Link>{" "}
                   </div>
@@ -112,33 +181,19 @@ export default function Home() {
               >
                 <div className="service-item">
                   <div className="img">
-                    <img src={introImg1} className="img-fluid m-3" alt="img" />
-                  </div>
-                  <div className="details position-relative">
-                    <h3>{t("home.ourServicesCardTwoHeader")}</h3>
-                    <p>{t("home.ourServicesCardTwoCont")}</p>
-                    <Link to="/services">
-                      <h5 className="mt-3">{t("home.readmore")}</h5>
-                    </Link>{" "}
-                  </div>
-                </div>
-              </Col>
-
-              <Col
-                xl={5}
-                md={6}
-                xs={11}
-                data-aos="zoom-in"
-                data-aos-delay="200"
-              >
-                <div className="service-item">
-                  <div className="img">
-                    <img src={introImg1} className="img-fluid m-3" alt="img" />
+                    <img
+                      src={img2}
+                      className="img-fluid m-3 homeIntroServImgs"
+                      alt="img"
+                    />
                   </div>
                   <div className="details position-relative">
                     <h3>{t("home.ourServicesCardThreeHeader")}</h3>
                     <p>{t("home.ourServicesCardThreeCont")}</p>
-                    <Link to="/services" style={{ textDecoration: "none" }}>
+                    <Link
+                      to="/transport-service"
+                      style={{ textDecoration: "none" }}
+                    >
                       <h5 className="mt-3">{t("home.readmore")}</h5>
                     </Link>{" "}
                   </div>
@@ -154,12 +209,44 @@ export default function Home() {
               >
                 <div className="service-item">
                   <div className="img">
-                    <img src={introImg1} className="img-fluid m-3" alt="img" />
+                    <img
+                      src={img3}
+                      className="img-fluid m-3 homeIntroServImgs"
+                      alt="img"
+                    />
+                  </div>
+                  <div className="details position-relative">
+                    <h3>{t("home.ourServicesCardThreeHeader")}</h3>
+                    <p>{t("home.ourServicesCardThreeCont")}</p>
+                    <Link
+                      to="/transport-service"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <h5 className="mt-3">{t("home.readmore")}</h5>
+                    </Link>{" "}
+                  </div>
+                </div>
+              </Col>
+
+              <Col
+                xl={5}
+                md={6}
+                xs={11}
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <div className="service-item">
+                  <div className="img">
+                    <img
+                      src={img4}
+                      className="img-fluid m-3 homeIntroServImgs"
+                      alt="img"
+                    />
                   </div>
                   <div className="details position-relative">
                     <h3>{t("home.ourServicesCardFourHeader")}</h3>
                     <p>{t("home.ourServicesCardFourCont")}</p>
-                    <Link to="/services">
+                    <Link to="/cleaning-and-moving">
                       <h5 className="mt-3">{t("home.readmore")}</h5>
                     </Link>{" "}
                   </div>
@@ -250,7 +337,7 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <div className="service-item  position-relative">
+                <div className="service-item">
                   <div className="icon">
                     <p>01.</p>
                   </div>
@@ -306,125 +393,38 @@ export default function Home() {
                   data-aos-delay="100"
                 >
                   <div className="content px-xl-5">
-                    <h3>
-                      <span>Frequently Asked </span>
-                      <strong>Questions</strong>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Duis aute irure dolor in reprehenderit
-                    </p>
+                    <h3>{t("faq.title")}</h3>
+                    <p>{t("faq.description")}</p>
                   </div>
                 </div>
 
                 <div
-                  className="col-lg-8"
+                  className="col-lg-7"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  <div className="faq-container">
-                    <div className="faq-item faq-active">
-                      <h3>
-                        <span className="num">1.</span>{" "}
-                        <span>
-                          Non consectetur a erat nam at lectus urna duis?
-                        </span>
-                      </h3>
-                      <div className="faq-content">
-                        <p>
-                          Feugiat pretium nibh ipsum consequat. Tempus iaculis
-                          urna id volutpat lacus laoreet non curabitur gravida.
-                          Venenatis lectus magna fringilla urna porttitor
-                          rhoncus dolor purus non.
-                        </p>
-                      </div>
-                      <i className="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-
-                    <div className="faq-item">
-                      <h3>
-                        <span className="num">2.</span>{" "}
-                        <span>
-                          Feugiat scelerisque varius morbi enim nunc faucibus a
-                          pellentesque?
-                        </span>
-                      </h3>
-                      <div className="faq-content">
-                        <p>
-                          Dolor sit amet consectetur adipiscing elit
-                          pellentesque habitant morbi. Id interdum velit laoreet
-                          id donec ultrices. Fringilla phasellus faucibus
-                          scelerisque eleifend donec pretium. Est pellentesque
-                          elit ullamcorper dignissim. Mauris ultrices eros in
-                          cursus turpis massa tincidunt dui.
-                        </p>
-                      </div>
-                      <i className="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-
-                    <div className="faq-item">
-                      <h3>
-                        <span className="num">3.</span>{" "}
-                        <span>
-                          Dolor sit amet consectetur adipiscing elit
-                          pellentesque?
-                        </span>
-                      </h3>
-                      <div className="faq-content">
-                        <p>
-                          Eleifend mi in nulla posuere sollicitudin aliquam
-                          ultrices sagittis orci. Faucibus pulvinar elementum
-                          integer enim. Sem nulla pharetra diam sit amet nisl
-                          suscipit. Rutrum tellus pellentesque eu tincidunt.
-                          Lectus urna duis convallis convallis tellus. Urna
-                          molestie at elementum eu facilisis sed odio morbi quis
-                        </p>
-                      </div>
-                      <i className="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-
-                    <div className="faq-item">
-                      <h3>
-                        <span className="num">4.</span>{" "}
-                        <span>
-                          Ac odio tempor orci dapibus. Aliquam eleifend mi in
-                          nulla?
-                        </span>
-                      </h3>
-                      <div className="faq-content">
-                        <p>
-                          Dolor sit amet consectetur adipiscing elit
-                          pellentesque habitant morbi. Id interdum velit laoreet
-                          id donec ultrices. Fringilla phasellus faucibus
-                          scelerisque eleifend donec pretium. Est pellentesque
-                          elit ullamcorper dignissim. Mauris ultrices eros in
-                          cursus turpis massa tincidunt dui.
-                        </p>
-                      </div>
-                      <i className="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-
-                    <div className="faq-item">
-                      <h3>
-                        <span className="num">5.</span>{" "}
-                        <span>
-                          Tempus quam pellentesque nec nam aliquam sem et tortor
-                          consequat?
-                        </span>
-                      </h3>
-                      <div className="faq-content">
-                        <p>
-                          Molestie a iaculis at erat pellentesque adipiscing
-                          commodo. Dignissim suspendisse in est ante in. Nunc
-                          vel risus commodo viverra maecenas accumsan. Sit amet
-                          nisl suscipit adipiscing bibendum est. Purus gravida
-                          quis blandit turpis cursus in
-                        </p>
-                      </div>
-                      <i className="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                  </div>
+                  <Accordion defaultActiveKey="0">
+                    <Accordion.Item eventKey="0">
+                      <Accordion.Header>{t("faq.quesOne")}</Accordion.Header>
+                      <Accordion.Body>{t("faq.answerOne")}</Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="1">
+                      <Accordion.Header>{t("faq.quesTwo")}</Accordion.Header>
+                      <Accordion.Body>{t("faq.answerTwo")}</Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="2">
+                      <Accordion.Header>{t("faq.quesThree")}</Accordion.Header>
+                      <Accordion.Body>{t("faq.answerThree")}</Accordion.Body>
+                    </Accordion.Item>{" "}
+                    <Accordion.Item eventKey="3">
+                      <Accordion.Header>{t("faq.quesFour")}</Accordion.Header>
+                      <Accordion.Body>{t("faq.answerFour")}</Accordion.Body>
+                    </Accordion.Item>{" "}
+                    <Accordion.Item eventKey="4">
+                      <Accordion.Header>{t("faq.quesFive")}</Accordion.Header>
+                      <Accordion.Body>{t("faq.answerFive")}</Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
                 </div>
               </div>
             </div>
@@ -439,34 +439,31 @@ export default function Home() {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <Form className="emailForm">
-            <h3>Get a quote</h3>
-            <p>
-              Request a detailed quote in few minutes. Provide accurate details
-              for a personalized, free, and no-obligation offer. Every detail
-              matters to help us create the perfect quote for you. We’ll respond
-              quickly.
-            </p>
+          <Form className="emailForm" onSubmit={handleSubmit}>
+            <h3>{t("quote.title")}</h3>
+            <p>{t("quote.quoteDesc")}</p>
 
             <Row className="gy-4 mt-3">
               <Col lg={12}>
-                <h4>Details</h4>
+                <h4>{t("quote.name")}</h4>
               </Col>
               <Col md={6}>
                 <Form.Control
                   type="text"
-                  name="name"
-                  placeholder="First Name"
+                  name="firstName"
+                  placeholder={t("quote.first")}
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
               <Col md={6}>
                 <Form.Control
                   type="text"
-                  name="name"
-                  placeholder="Last Name"
+                  name="lastName"
+                  placeholder={t("quote.last")}
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
@@ -474,8 +471,9 @@ export default function Home() {
                 <Form.Control
                   type="text"
                   name="phone"
-                  placeholder="Phone"
+                  placeholder={t("quote.phone")}
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
@@ -483,50 +481,53 @@ export default function Home() {
                 <Form.Control
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder={t("quote.email")}
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
               <Col lg={12}>
-                <h4>Address</h4>
+                <h4>{t("quote.from")}</h4>
               </Col>
-
-              <h4>From</h4>
 
               <Col md={3}>
                 <Form.Control
                   type="text"
-                  name="street"
-                  placeholder="Street / No."
+                  name="streetFrom"
+                  placeholder={t("quote.from")}
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
               <Col md={3}>
                 <Form.Control
                   type="text"
-                  name="city"
-                  placeholder="Postcode / City"
+                  name="cityFrom"
+                  placeholder={t("quote.post")}
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
               <Col md={3}>
                 <Form.Control
-                  type="text"
-                  name="rooms"
-                  placeholder="Number of Rooms"
+                  type="number"
+                  name="roomsFrom"
+                  placeholder={t("quote.rooms")}
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
               <Col md={3}>
                 <Form.Select
-                  name="floor"
+                  name="floorFrom"
                   required
                   className="form-control"
                   defaultValue=""
+                  onChange={handleChange}
                 >
                   <option value="" disabled>
                     {t("quote.floor")}
@@ -540,41 +541,48 @@ export default function Home() {
                   )}
                 </Form.Select>
               </Col>
-              <h4>To</h4>
+
+              <Col lg={12}>
+                <h4>{t("quote.to")}</h4>
+              </Col>
 
               <Col md={3}>
                 <Form.Control
                   type="text"
-                  name="street"
-                  placeholder="Street / No."
+                  name="streetTo"
+                  placeholder={t("quote.from")}
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
               <Col md={3}>
                 <Form.Control
                   type="text"
-                  name="city"
-                  placeholder="Postcode / City"
+                  name="cityTo"
+                  placeholder={t("quote.post")}
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
               <Col md={3}>
                 <Form.Control
-                  type="text"
-                  name="rooms"
-                  placeholder="Number of Rooms"
+                  type="number"
+                  name="roomsTo"
+                  placeholder={t("quote.rooms")}
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
               <Col md={3}>
                 <Form.Select
-                  name="floor"
+                  name="floorTo"
                   required
                   className="form-control"
                   defaultValue=""
+                  onChange={handleChange}
                 >
                   <option value="" disabled>
                     {t("quote.floor")}
@@ -595,6 +603,7 @@ export default function Home() {
                   required
                   className="form-control"
                   defaultValue=""
+                  onChange={handleChange}
                 >
                   <option value="" disabled>
                     {t("quote.driver")}
@@ -615,6 +624,7 @@ export default function Home() {
                   required
                   className="form-control"
                   defaultValue=""
+                  onChange={handleChange}
                 >
                   <option value="" disabled>
                     {t("quote.additional")}
@@ -635,6 +645,7 @@ export default function Home() {
                   required
                   className="form-control"
                   defaultValue=""
+                  onChange={handleChange}
                 >
                   <option value="" disabled>
                     {t("quote.materials")}
@@ -650,43 +661,48 @@ export default function Home() {
               </Col>
 
               <Col md={6}>
-                <h4>From Date of Services</h4>
+                <h4>{t("quote.fromDate")}</h4>
                 <Form.Control
                   className="mt-4"
-                  type="datetime-local"
+                  type="dateTime-local"
                   name="fromDate"
-                  placeholder="Select date and time"
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
               <Col md={6}>
-                <h4>To Date of Services</h4>
+                <h4>{t("quote.toDate")}</h4>
                 <Form.Control
                   className="mt-4"
-                  type="datetime-local"
+                  type="dateTime-local"
                   name="toDate"
-                  placeholder="Select date and time"
                   required
+                  onChange={handleChange}
                 />
               </Col>
 
               <Col lg={12}>
-                <h4>Your Message</h4>
-              </Col>
-              <Col xs={12}>
                 <Form.Control
                   as="textarea"
+                  rows={5}
                   name="message"
-                  rows="6"
-                  placeholder="Message"
-                  required
+                  placeholder={t("quote.message")}
+                  onChange={handleChange}
                 />
               </Col>
 
-              <Col xs={12} className="text-center">
-                <Button className="getStartedBtn" lg={5}>
-                  Get A Quote
+              <Col lg={12} className="text-center submitBtn">
+                <Button
+                  className="getStartedBtn"
+                  type="submit"
+                  style={{
+                    background: "#f76c45",
+                    borderColor: "#f76c45",
+                    color: "white",
+                  }}
+                >
+                  {t("quote.submit")}
                 </Button>
               </Col>
             </Row>

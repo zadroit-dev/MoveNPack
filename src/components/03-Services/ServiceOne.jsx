@@ -4,7 +4,7 @@ import { Col, Row, Button } from "react-bootstrap";
 
 import introImg1 from "../../assets/home/introImgOne.jpg";
 
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "./services.css";
 export default function ServiceOne() {
@@ -19,14 +19,9 @@ export default function ServiceOne() {
     <div>
       <div className="servicesOne">
         <div className="contactUsHeader">
-          <h3 className="mt-4">Moving and Packing</h3>
-          <h5 className="mt-4">“Smooth Transitions, Every Time”</h5>
-          <p className="mt-4">
-            Moving can be a stressful experience, but with our expert moving and
-            packing services, you can relax and leave the heavy lifting to us.
-            Our team is dedicated to ensure your belongings are handled with
-            care and arrive at your new location safely.
-          </p>
+          <h3 className="mt-4">{t("serviceOne.title")}</h3>
+          <h5 className="mt-4">{t("serviceOne.quote")}</h5>
+          <p className="mt-4">{t("serviceOne.description")}</p>
         </div>
 
         <Row className="serviceOne">
@@ -39,21 +34,10 @@ export default function ServiceOne() {
           </Col>
           <Col className="contents ms-lg-5 mt-4" lg={5} xs={12}>
             <h3>
-              <b>Our Specialization:</b>
+              <b>{t("serviceOne.pointHeader")}</b>
             </h3>
             <p>
-              <b>Comprehensive Packing Services:</b> Our professional packers
-              use high-quality materials to protect your items.
-            </p>
-            <p>
-              <b>Efficient Moving Solutions:</b> Whether it's a local move or a
-              long-distance relocation, our experienced movers will manage every
-              aspect of your move efficiently and precisely.
-            </p>
-            <p>
-              <b>Secure Transportation:</b> Our modern trucks are equipped to
-              transport your belongings safely and securely, minimizing any risk
-              of damage.
+              <b>{t("serviceOne.ServOneHeader")}</b> {t("serviceOne.ServOne")}
             </p>
             <Button
               className="getStartedBtn col-lg-5 col-12 mb-3"

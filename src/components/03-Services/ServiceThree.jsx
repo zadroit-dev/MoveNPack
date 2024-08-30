@@ -5,7 +5,6 @@ import { Col, Row, Button } from "react-bootstrap";
 import introImg1 from "../../assets/home/introImgOne.jpg";
 import { useNavigate, Link } from "react-router-dom";
 
-
 import "./services.css";
 export default function ServiceThree() {
   const { t } = useTranslation("global");
@@ -20,13 +19,9 @@ export default function ServiceThree() {
     <div>
       <div className="servicesOne">
         <div className="contactUsHeader">
-          <h3 className="mt-4">Cleaning and Moving Services:</h3>
-          <h5 className="mt-4">“The Best of Both Worlds”</h5>
-          <p className="mt-4">
-            For those who want the convenience of combining moving and cleaning
-            services, we offer a seamless solution that takes care of everything
-            in one go. Our integrated cleaning and moving services include:
-          </p>
+          <h3 className="mt-4">{t("serviceThree.title")}</h3>
+          <h5 className="mt-4">{t("serviceThree.quote")}</h5>
+          <p className="mt-4">{t("serviceThree.description")}</p>
         </div>
 
         <Row className="serviceOne">
@@ -39,20 +34,17 @@ export default function ServiceThree() {
           </Col>
           <Col className="contents ms-lg-5 mt-4" lg={5} xs={12}>
             <h3>
-              <b>Our Specialization:</b>
+              <b>{t("serviceThree.pointHeader")}</b>
             </h3>
             <p>
-              <b>Pre-Move Cleaning:</b> Before you move out, let us handle the
-              cleaning to ensure your old place is left spotless.
+              <b>{t("serviceThree.Servoneheader")}</b> {t("serviceThree.ServOne")}
             </p>
             <p>
-              <b>Post-Move Cleaning:</b> Once you’re settled in, our team will
-              give your new home a thorough clean to make it move-in ready.
+              <b>{t("serviceThree.ServTwoHeader")}</b> {t("serviceThree.ServTwo")}
             </p>
             <p>
-              <b>Move-In/Out Packages:</b> : Choose our comprehensive packages
-              that cover both moving and cleaning to streamline your transition
-              and give you peace of mind.
+              <b>{t("serviceThree.ServThreeHeader")}</b>{" "}
+              {t("serviceThree.ServThree")}
             </p>
             <Button
               className="getStartedBtn col-lg-5 col-12 mb-3"

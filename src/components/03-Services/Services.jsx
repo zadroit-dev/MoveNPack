@@ -138,9 +138,9 @@ export default function Services() {
                     <Card.Img variant="top" src={post.img} />
                     <Card.Body>
                       <Card.Title>{t(post.titleKey)}</Card.Title>
-                      <div className="d-flex align-items-center mt-2">
-                        <div className="post-meta ms-2">
-                          <p className="post-value">{t(post.value)}</p>
+                      <div className="d-flex align-items-center mt-2 mb-3">
+                        <div className="post-meta mt-3">
+                          <span className="post-value">{t(post.value)}</span>
                         </div>
                       </div>
                     </Card.Body>

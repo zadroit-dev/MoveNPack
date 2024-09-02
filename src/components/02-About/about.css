@@ -1,6 +1,10 @@
 .stats .stats-item {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 15px;
+}
+
+.stats .container .row{
+  justify-content: space-between;
 }
 
 .stats .stats-item i {
@@ -32,13 +36,13 @@
   background-color: #f9f3eb;
 }
 
-.contents h1{
+.contents h1 {
   font-size: 40px;
   font-weight: bolder;
   font-family: "Archivo", sans-serif;
 }
 
-.contents p{
+.contents p {
   text-align: justify;
   padding: 10px;
 }
@@ -52,7 +56,6 @@
   justify-content: space-evenly;
 }
 
-
 .text-align-center {
   text-align: center;
 }
@@ -62,53 +65,58 @@
 }
 
 @media (max-width: 768px) {
+  .aboutUs .contactUsHeader h3 {
+    font-size: 30px;
+  }
   .aboutTexts,
   .content {
     text-align: center;
   }
 }
 
-@media (min-width: 769px) {
-  .aboutTexts,
-  .content {
-    text-align: start;
+@media (min-width: 1365px) {
+  .aboutUs .contactUsHeader h3 {
+    font-size: 54px;
   }
 }
 
 
-.aboutTexts h3, .content h3{
+.aboutTexts h3,
+.content h3 {
   font-size: 40px;
   font-weight: bolder;
   font-family: "Archivo", sans-serif;
 }
 
-.aboutTexts span, .content span{
+.aboutTexts span,
+.content span {
   color: #ff4a17;
   font-size: 24px;
   font-weight: 400;
 }
 
-.aboutTexts p, .content p{
+.aboutTexts p,
+.content p {
   font-size: 18px;
 }
 
-.aboutUs .contactUsHeader{
+.aboutUs .contactUsHeader {
   background-color: #f9f3eb;
   padding: 50px 10px;
 }
 
-.aboutUs .contactUsHeader p{
+.aboutUs .contactUsHeader p {
   text-align: center;
   font-size: 20px;
 }
 
-.aboutUs .contactUsHeader h3{
-  font-size: 30px;
+.aboutUs .contactUsHeader h3 {
+  /* font-size: 54px; */
   text-align: center;
   font-weight: bolder;
   font-family: "Archivo", sans-serif;
 }
 
-.aboutUs .whoWeAre{
+.aboutUs .whoWeAre {
   margin: 0;
 }

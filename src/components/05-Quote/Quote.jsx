@@ -41,22 +41,31 @@ export default function Quote() {
     console.log("Mailto", formData);
 
     const mailtoLink = `mailto:info@movenpack.ch?subject=Quote Request from ${formData.firstName} ${formData.lastName}&body=
-      First Name: ${formData.firstName}%0D%0A
-      Last Name: ${formData.lastName}%0D%0A
-      Phone: ${formData.phone}%0D%0A
-      Email: ${formData.email}%0D%0A
-      From Address: ${formData.streetFrom}, ${formData.cityFrom}%0D%0A
-      Rooms: ${formData.roomsFrom}%0D%0A
-      Floor: ${formData.floorFrom}%0D%0A
-      To Address: ${formData.streetTo}, ${formData.cityTo}%0D%0A
-      Rooms: ${formData.roomsTo}%0D%0A
-      Floor: ${formData.floorTo}%0D%0A
-      Driver: ${formData.driver}%0D%0A
-      Additional: ${formData.additional}%0D%0A
-      Materials: ${formData.materials}%0D%0A
-      From Date: ${formData.fromDate}%0D%0A
-      To Date: ${formData.toDate}%0D%0A
-      Message: ${formData.message}`;
+    Dear Movenpack Team,%0D%0A%0D%0A
+    I would like to request a quote for the following move details:%0D%0A%0D%0A
+    Client Information:%0D%0A
+    - First Name: ${formData.firstName}%0D%0A
+    - Last Name: ${formData.lastName}%0D%0A
+    - Phone: ${formData.phone}%0D%0A
+    - Email: ${formData.email}%0D%0A%0D%0A
+    Moving From:%0D%0A
+    - Address: ${formData.streetFrom}, ${formData.cityFrom}%0D%0A
+    - Rooms: ${formData.roomsFrom}%0D%0A
+    - Floor: ${formData.floorFrom}%0D%0A%0D%0A
+    Moving To:%0D%0A
+    - Address: ${formData.streetTo}, ${formData.cityTo}%0D%0A
+    - Rooms: ${formData.roomsTo}%0D%0A
+    - Floor: ${formData.floorTo}%0D%0A%0D%0A
+    Additional Details:%0D%0A
+    - Driver Required: ${formData.driver}%0D%0A
+    - Materials Needed: ${formData.materials}%0D%0A
+    - Preferred Moving Date: From ${formData.fromDate} to ${formData.toDate}%0D%0A
+    - Additional Information: ${formData.additional}%0D%0A%0D%0A
+    Message:%0D%0A
+    ${formData.message}%0D%0A%0D%0A
+    Thank you for considering my request. Please feel free to reach out if you require any additional information.%0D%0A%0D%0A
+    Best regards,%0D%0A
+    ${formData.firstName} ${formData.lastName}`;
 
     window.location.href = mailtoLink;
   };

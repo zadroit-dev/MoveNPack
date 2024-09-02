@@ -27,7 +27,7 @@
 
 .nav-link {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bolder;
 }
 
 .navbar-nav > .nav-link.active {

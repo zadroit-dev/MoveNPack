@@ -13,13 +13,13 @@ import {
 import { useNavigate, Link } from "react-router-dom";
 
 import introImg1 from "../../assets/home/introImgOne.jpg";
-import introImg2 from "../../assets/home/introImgTwo.jpg";
+import introImg2 from "../../assets/home/introImageOne.jpg";
 import profile1 from "../../assets/images/images/userImg.jpg";
 import profile2 from "../../assets/images/test2.jpg";
 
 import img1 from "../../assets/services/img2.jpeg";
 import img2 from "../../assets/services/img3.png";
-import img3 from "../../assets/services/img8.jpg";
+import img3 from "../../assets/home/transportService.jpg";
 import img4 from "../../assets/services/img4.jpeg";
 
 import "./home.css";
@@ -80,18 +80,31 @@ export default function Home() {
     console.log("Mailto", formData);
 
     const mailtoLink = `mailto:info@movenpack.ch?subject=Quote Request from ${formData.firstName} ${formData.lastName}&body=
-      First Name: ${formData.firstName}%0D%0A
-      Last Name: ${formData.lastName}%0D%0A
-      Phone: ${formData.phone}%0D%0A
-      Email: ${formData.email}%0D%0A
-      From Address: ${formData.streetFrom}, ${formData.cityFrom}, Rooms: ${formData.roomsFrom}, Floor: ${formData.floorFrom}%0D%0A
-      To Address: ${formData.streetTo}, ${formData.cityTo}, Rooms: ${formData.roomsTo}, Floor: ${formData.floorTo}%0D%0A
-      Driver: ${formData.driver}%0D%0A
-      Additional: ${formData.additional}%0D%0A
-      Materials: ${formData.materials}%0D%0A
-      From Date: ${formData.fromDate}%0D%0A
-      To Date: ${formData.toDate}%0D%0A
-      Message: ${formData.message}`;
+    Dear Movenpack Team,%0D%0A%0D%0A
+    I would like to request a quote for the following move details:%0D%0A%0D%0A
+    Client Information:%0D%0A
+    - First Name: ${formData.firstName}%0D%0A
+    - Last Name: ${formData.lastName}%0D%0A
+    - Phone: ${formData.phone}%0D%0A
+    - Email: ${formData.email}%0D%0A%0D%0A
+    Moving From:%0D%0A
+    - Address: ${formData.streetFrom}, ${formData.cityFrom}%0D%0A
+    - Rooms: ${formData.roomsFrom}%0D%0A
+    - Floor: ${formData.floorFrom}%0D%0A%0D%0A
+    Moving To:%0D%0A
+    - Address: ${formData.streetTo}, ${formData.cityTo}%0D%0A
+    - Rooms: ${formData.roomsTo}%0D%0A
+    - Floor: ${formData.floorTo}%0D%0A%0D%0A
+    Additional Details:%0D%0A
+    - Driver Required: ${formData.driver}%0D%0A
+    - Materials Needed: ${formData.materials}%0D%0A
+    - Preferred Moving Date: From ${formData.fromDate} to ${formData.toDate}%0D%0A
+    - Additional Information: ${formData.additional}%0D%0A%0D%0A
+    Message:%0D%0A
+    ${formData.message}%0D%0A%0D%0A
+    Thank you for considering my request. Please feel free to reach out if you require any additional information.%0D%0A%0D%0A
+    Best regards,%0D%0A
+    ${formData.firstName} ${formData.lastName}`;
 
     window.location.href = mailtoLink;
   };
@@ -188,8 +201,8 @@ export default function Home() {
                     />
                   </div>
                   <div className="details position-relative">
-                    <h3>{t("home.ourServicesCardThreeHeader")}</h3>
-                    <p>{t("home.ourServicesCardThreeCont")}</p>
+                    <h3>{t("home.ourServicesCardTwoHeader")}</h3>
+                    <p>{t("home.ourServicesCardTwoCont")}</p>
                     <Link
                       to="/transport-service"
                       style={{ textDecoration: "none" }}
@@ -258,10 +271,7 @@ export default function Home() {
       </Row>
 
       <div className="callToAction">
-        <section
-          id="call-to-action"
-          className="call-to-action section dark-background"
-        >
+        <section id="callToAct" className="callToAct section">
           <Container>
             <Row
               className="justify-content-center"

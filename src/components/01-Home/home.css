@@ -83,9 +83,8 @@
   transition: 0.6s;
 }
 
-
-.homeIntroServImgs{
-  height: 400px;
+.homeIntroServImgs {
+  height: 300px;
 }
 .services .details {
   background: color-mix(in srgb, #ffffff, transparent 5%);
@@ -184,7 +183,7 @@
   color: white;
 }
 
-.callToAction .call-to-action {
+.callToAction .callToAct {
   padding: 40px 20px;
   background-color: #444444c0;
 }
@@ -310,6 +309,12 @@
   .testimonials h3 {
     font-size: 30px;
   }
+  .service-item .details {
+    width: 315px;
+  }
+  .homeIntroServImgs{
+    width: 325px;
+  }
 }
 
 .testimonial-card {
@@ -334,17 +339,17 @@
   color: #f76c45;
 }
 
-.faq .container .row{
+.faq .container .row {
   justify-content: center;
 }
 
 .faq .content p {
   font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, #212529, transparent 30%);
 }
 
 .faq .faq-container .faq-item {
-  background-color: var(--surface-color);
+  background-color: #ffffff;
   position: relative;
   padding: 20px;
   margin-bottom: 20px;
@@ -368,12 +373,12 @@
 }
 
 .faq .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
+  color: #0d42ff;
   padding-right: 5px;
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
+  color: #0d42ff;
 }
 
 .faq .faq-container .faq-item .faq-content {
@@ -400,11 +405,11 @@
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
+  color: #0d42ff;
 }
 
 .faq .faq-container .faq-active h3 {
-  color: var(--accent-color);
+  color: #0d42ff;
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -416,7 +421,7 @@
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--accent-color);
+  color: #0d42ff;
 }
 
 .faqHeader {
@@ -433,7 +438,6 @@
   text-decoration: none;
   color: #f76c45;
 }
-
 .homeQuote {
   justify-content: center;
   display: flex;

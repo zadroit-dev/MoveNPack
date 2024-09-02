@@ -20,6 +20,8 @@ import ServiceFour from "./components/03-Services/ServiceFour";
 import Contact from "./components/04-Contact/Contact";
 import Quote from "./components/05-Quote/Quote";
 
+import ScrollToTop from "./pages/ScrollTop";
+
 import whatsApp from "./assets/images/images/whatsapp.png";
 import Footer from "./components/06-Footer/Footer";
 
@@ -42,6 +44,7 @@ function App() {
   return (
     <>
       <Router>
+      <ScrollToTop />
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />

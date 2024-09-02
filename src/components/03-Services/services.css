@@ -58,18 +58,40 @@
     transform: translateY(-10px);
     border-color: #f76c45;
   }
+  .serviceContents .services .contactUsHeader h3 {
+    font-size: 54px;
+  }
+  .servicesOne .contactUsHeader h3 {
+    font-size: 52px;
+  }
 
   .serviceContents .services .service-item:hover h3 {
     color: #f76c45;
   }
 }
 
+@media (min-width: 769px) {
+  .aboutTexts,
+  .content {
+    text-align: start;
+  }
+  .contactUsHeader h3 {
+    font-size: 30px;
+  }
+
+}
+
+.serviceImages {
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
 .whyChooseUs .services .service-item p {
-  text-align: start;
+  text-align: center;
 }
 
 .recent-posts article {
-  background: var(--surface-color);
+  background: #ffffff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 30px;
   height: 100%;
@@ -123,7 +145,8 @@
 }
 
 .contactUsHeader h3 {
-  font-size: 2rem;
+  font-size: 25px;
+  font-weight: bolder;
 }
 
 .contactUsHeader p {
@@ -137,7 +160,7 @@
   height: 100%;
 }
 
-.service .service-item .card-body .card-text{
+.service .service-item .card-body .card-text {
   text-align: center;
 }
 .service .service-item .card-body {

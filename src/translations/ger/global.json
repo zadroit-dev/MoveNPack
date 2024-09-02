@@ -9,7 +9,7 @@
   },
   "home": {
     "welcomeMessage": "Nahtlose Umzugs- und Reinigungslösungen",
-    "welcomeMessageSub": "Erleben Sie stressfreie Umzüge und gründliche Reinigungsdienste, die auf Ihre Bedürfnisse zugeschnitten sind. Überlassen Sie uns das Packen, den Umzug und die Reinigung für einen reibungslosen Übergang",
+    "welcomeMessageSub": "Erleben Sie stressfreie Umzüge und gründliche Reinigungsdienste, die auf Ihre Bedürfnisse zugeschnitten sind. Überlassen Sie uns das Packen, den Umzug und die Reinigung für einen reibungslosen Übergang.",
     "getStarted": "Jetzt loslegen",
     "whoWeAre": "Wer wir sind",
     "aboutWhoWeAreOne": "Entdecken Sie unsere umfassenden Umzugs- und Verpackungsservices für Nah- und Fernumzüge. Wir kümmern uns um die Details, während Sie sich auf Ihr Einleben konzentrieren.",
@@ -24,17 +24,17 @@
     "ourServicesCardOneHeader": "Umzüge",
     "ourServicesCardOneCont": "Verlegen Sie Ihren Umzug effizient mit unseren speziellen Umzugs- und Verpackungslösungen.",
     "ourServicesCardTwoHeader": "Gewerbliche Umzüge",
-    "ourServicesCardTwoCont": "Optimieren Sie Ihren Büroumzug mit unseren professionellen Umzugs- und Verpackungsdiensten",
+    "ourServicesCardTwoCont": "Optimieren Sie Ihren Büroumzug mit unseren professionellen Umzugs- und Verpackungsdiensten.",
     "ourServicesCardThreeHeader": "Transportdienstleistungen",
-    "ourServicesCardThreeCont": "Zuverlässige und effiziente Transportdienste, um sicherzustellen, dass Ihr Eigentum sicher und pünktlich ankommt",
+    "ourServicesCardThreeCont": "Zuverlässige und effiziente Transportdienste, um sicherzustellen, dass Ihr Eigentum sicher und pünktlich ankommt.",
     "ourServicesCardFourHeader": "Nur Reinigung",
     "ourServicesCardFourCont": "Reinigen Sie Ihre Räumlichkeiten vor oder nach Ihrem Umzug gründlich, damit Sie neu anfangen können.",
     "clientTestimonials": "Kundenreferenzen",
-    "testimonialDesc": "Entdecken Sie, was unsere Kunden über uns sagen",
+    "testimonialDesc": "Entdecken Sie, was unsere Kunden über uns sagen.",
     "testimonialOne": "MoveNPack hat unseren Umzug zu einem Kinderspiel gemacht! Professioneller, effizienter und zuvorkommender Service von Anfang bis Ende.",
     "testimonialTwo": "Außergewöhnlicher Tiefenreinigungsservice nach dem Umzug. Unser Haus glänzte, dank MoveNPack!",
     "whyChooseUs": "Warum uns wählen",
-    "whyChooseUsDesc": "Entdecken Sie unsere einzigartigen Vorteile für einen reibungslosen Umzug",
+    "whyChooseUsDesc": "Entdecken Sie unsere einzigartigen Vorteile für einen reibungslosen Umzug.",
     "reasonOneHeader": "Personalisierter Service",
     "reasonOne": "Maßgeschneiderte Lösungen für individuelle Umzugs- und Reinigungsanforderungen.",
     "reasonTwoHeader": "Nahtlose Übergänge",
@@ -67,10 +67,10 @@
     "getStarted": "Jetzt starten",
     "aim": "Unser Ziel",
     "mission": "Leitbild",
-    "missionDesc": "Bereitstellung tadelloser, auf die Bedürfnisse jedes Kunden zugeschnittener Umzugs- und Reinigungsdienste, die einen reibungslosen und stressfreien Umzug gewährleisten",
+    "missionDesc": "Bereitstellung tadelloser, auf die Bedürfnisse jedes Kunden zugeschnittener Umzugs- und Reinigungsdienste, die einen reibungslosen und stressfreien Umzug gewährleisten.",
     "ourGoals": "Unsere Ziele",
     "companyGoals": "Ziele des Unternehmens",
-    "goalsDesc": "Unser Ziel ist es, Ihren Umzug so nahtlos und einfach wie möglich zu gestalten, indem wir qualitativ hochwertige Dienstleistungen anbieten, die alle Aspekte Ihres Umzugs und Ihrer Reinigungsbedürfnisse abdecken",
+    "goalsDesc": "Unser Ziel ist es, Ihren Umzug so nahtlos und einfach wie möglich zu gestalten, indem wir qualitativ hochwertige Dienstleistungen anbieten, die alle Aspekte Ihres Umzugs und Ihrer Reinigungsbedürfnisse abdecken.",
     "elevateYourMove": "Erhöhen Sie Ihren Umzug noch heute",
     "or": "Oder",
     "call": "Anruf: +41789235590"
@@ -92,7 +92,7 @@
     },
     "two": {
       "key": "Gewerbliche Umzüge",
-      "value": "Optimieren Sie Ihren Büroumzug mit unseren professionellen Umzugs- und Verpackungsdiensten"
+      "value": "Optimieren Sie Ihren Büroumzug mit unseren professionellen Umzugs- und Verpackungsdiensten."
     },
     "three": {
       "key": "Nur Verpacken",
@@ -112,7 +112,7 @@
     },
     "seven": {
       "key": "Antiquitäten & Spezialitäten",
-      "value": "Gewährleistung der sicheren Handhabung und des Transports Ihrer wertvollen und empfindlichen Gegenstände"
+      "value": "Gewährleistung der sicheren Handhabung und des Transports Ihrer wertvollen und empfindlichen Gegenstände."
     },
     "eight": {
       "key": "Umzugsgut",
@@ -206,7 +206,7 @@
     "mobile": "+41789235590",
     "follow": "Folgen Sie uns",
     "contactUs": "Kontaktieren Sie uns",
-    "contQuote": "Lassen Sie uns zusammenarbeiten, damit Ihr Umzug reibungslos verläuft",
+    "contQuote": "Lassen Sie uns zusammenarbeiten, damit Ihr Umzug reibungslos verläuft.",
     "name": "Name",
     "message": "Nachricht",
     "submit": "Einreichen",
@@ -233,11 +233,11 @@
     "description": "Ein sauberer Raum ist für Komfort und Wohlbefinden unerlässlich. Unsere professionellen Reinigungsdienste erfüllen die höchsten Standards und sorgen für eine gründliche und sorgfältige Reinigung Ihres Zuhauses oder Büros.",
     "pointHeader": "Zu unseren Dienstleistungen gehören:",
     "Servoneheader": "Regelmäßige Reinigung:",
-    "ServOne": "Halten Sie Ihren Raum mit unseren planmäßigen Reinigungsdiensten stets sauber und frisch. Perfekt für die Aufrechterhaltung einer gesunden Umwelt ",
+    "ServOne": "Halten Sie Ihren Raum mit unseren planmäßigen Reinigungsdiensten stets sauber und frisch. Perfekt für die Aufrechterhaltung einer gesunden Umwelt.",
     "ServTwoHeader": "tiefenreinigung:",
-    "ServTwo": "Unser umfassender Reinigungsservice zielt auf jeden Winkel Ihres Eigentums ab, beseitigt schwer zugängliche Bereiche und beseitigt Schmutz und Allergene",
+    "ServTwo": "Unser umfassender Reinigungsservice zielt auf jeden Winkel Ihres Eigentums ab, beseitigt schwer zugängliche Bereiche und beseitigt Schmutz und Allergene.",
     "ServThreeHeader": "Spezialreinigung",
-    "ServThree": "Von Teppichen und Polstern bis hin zu Fenstern und Geräten sorgen unsere spezialisierten Reinigungsdienste dafür, dass jeder Teil Ihrer Immobilie makellos ist "
+    "ServThree": "Von Teppichen und Polstern bis hin zu Fenstern und Geräten sorgen unsere spezialisierten Reinigungsdienste dafür, dass jeder Teil Ihrer Immobilie makellos ist."
   },
   "serviceThree": {
     "title": "Reinigungs- und Umzugsdienste:",

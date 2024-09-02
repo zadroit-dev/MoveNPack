@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/logo/logo.png";
+import logo from "../../assets/logo/logoTwo.png";
 import "./navbar.css";
 import Spinners from "../../pages/Spinner/Spinners";
 

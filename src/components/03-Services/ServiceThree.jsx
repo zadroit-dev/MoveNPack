@@ -1,9 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Col, Row, Button } from "react-bootstrap";
+import {Container, Col, Row, Button } from "react-bootstrap";
 
-import introImg1 from "../../assets/home/introImgOne.jpg";
-import { useNavigate, Link } from "react-router-dom";
+import img3 from "../../assets/home/transportService.jpg";
+import { useNavigate } from "react-router-dom";
 
 import "./services.css";
 export default function ServiceThree() {
@@ -28,7 +28,7 @@ export default function ServiceThree() {
           <Col lg={4} xs={12}>
             <img
               className="introImg1 m-3 img-fluid"
-              src={introImg1}
+              src={img3}
               alt="introImage"
             />
           </Col>
@@ -37,10 +37,12 @@ export default function ServiceThree() {
               <b>{t("serviceThree.pointHeader")}</b>
             </h3>
             <p>
-              <b>{t("serviceThree.Servoneheader")}</b> {t("serviceThree.ServOne")}
+              <b>{t("serviceThree.Servoneheader")}</b>{" "}
+              {t("serviceThree.ServOne")}
             </p>
             <p>
-              <b>{t("serviceThree.ServTwoHeader")}</b> {t("serviceThree.ServTwo")}
+              <b>{t("serviceThree.ServTwoHeader")}</b>{" "}
+              {t("serviceThree.ServTwo")}
             </p>
             <p>
               <b>{t("serviceThree.ServThreeHeader")}</b>{" "}
@@ -54,6 +56,32 @@ export default function ServiceThree() {
             </Button>
           </Col>
         </Row>
+      </div>
+      <div className="callToAction">
+        <section id="callToAct" className="callToAct section">
+          <Container>
+            <Row
+              className="justify-content-center"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <Col xl={10}>
+                <div className="getReady text-center">
+                  <h3>{t("home.readyToMove")}</h3>
+                  <p>{t("home.readyToMoveCont")}</p>
+                  <Button
+                    className="getStartedBtn col-lg-5 col-12 mb-3"
+                    onClick={handleButtonClick}
+                  >
+                    {t("home.getStarted")}
+                  </Button>
+                  <p>Or</p>
+                  <p>{t("about.call")}</p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </div>
     </div>
   );

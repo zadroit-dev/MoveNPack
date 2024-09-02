@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Row, Col, Container, Image } from "react-bootstrap";
-import introImg2 from "../../assets/home/introImgTwo.jpg";
-import introImg1 from "../../assets/home/introImgOne.jpg";
+import { Button, Row, Col, Container, Image } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import "./about.css";
+
+import { useNavigate } from "react-router-dom";
+
+import introImg2 from "../../assets/home/introImageOne.jpg";
 
 import aim from "../../assets/about/aim.jpg";
 import goals from "../../assets/about/goals.jpeg";
@@ -34,6 +36,12 @@ export default function About() {
     return count;
   };
 
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/get-a-quote");
+  };
+
   const experienceCount = useCounter(20);
   const teamMembersCount = useCounter(15);
   const awardsCount = useCounter(10);
@@ -51,7 +59,7 @@ export default function About() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <Col lg={5} xs={12}>
+          <Col lg={5} xs={12} className="d-flex justify-content-center">
             <Image
               className="introImg1 img-fluid"
               src={introImg2}
@@ -65,7 +73,7 @@ export default function About() {
             </h1>
             <p>{t("about.aboutUsDesc")}</p>
 
-            <section id="stats" className="stats section light-background">
+            <section id="stats" className="stats section">
               <Container>
                 <Row className="gy-4">
                   <Col lg={3} md={6}>
@@ -138,6 +146,33 @@ export default function About() {
             </Row>
           </Container>
         </section>
+
+        <div className="callToAction">
+          <section id="callToAct" className="callToAct section">
+            <Container>
+              <Row
+                className="justify-content-center"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <Col xl={10}>
+                  <div className="getReady text-center">
+                    <h3>{t("home.readyToMove")}</h3>
+                    <p>{t("home.readyToMoveCont")}</p>
+                    <Button
+                      className="getStartedBtn col-lg-5 col-12 mb-3"
+                      onClick={handleButtonClick}
+                    >
+                      {t("home.getStarted")}
+                    </Button>
+                    <p>Or</p>
+                    <p>{t("about.call")}</p>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+        </div>
       </div>
     </div>
   );

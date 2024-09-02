@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Col, Row, Button } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 
-import introImg1 from "../../assets/home/introImgOne.jpg";
+import img1 from "../../assets/services/img2.jpeg";
 
 import { useNavigate } from "react-router-dom";
 
@@ -28,7 +28,7 @@ export default function ServiceOne() {
           <Col lg={4} xs={12}>
             <img
               className="introImg1 m-3 img-fluid"
-              src={introImg1}
+              src={img1}
               alt="introImage"
             />
           </Col>
@@ -39,6 +39,13 @@ export default function ServiceOne() {
             <p>
               <b>{t("serviceOne.ServOneHeader")}</b> {t("serviceOne.ServOne")}
             </p>
+            <p>
+              <b>{t("serviceOne.ServTwoHeader")}</b> {t("serviceOne.ServTwo")}
+            </p>{" "}
+            <p>
+              <b>{t("serviceOne.ServThreeHeader")}</b>{" "}
+              {t("serviceOne.ServThree")}
+            </p>{" "}
             <Button
               className="getStartedBtn col-lg-5 col-12 mb-3"
               onClick={handleButtonClick}
@@ -47,6 +54,32 @@ export default function ServiceOne() {
             </Button>
           </Col>
         </Row>
+      </div>
+      <div className="callToAction">
+        <section id="callToAct" className="callToAct section">
+          <Container>
+            <Row
+              className="justify-content-center"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <Col xl={10}>
+                <div className="getReady text-center">
+                  <h3>{t("home.readyToMove")}</h3>
+                  <p>{t("home.readyToMoveCont")}</p>
+                  <Button
+                    className="getStartedBtn col-lg-5 col-12 mb-3"
+                    onClick={handleButtonClick}
+                  >
+                    {t("home.getStarted")}
+                  </Button>
+                  <p>Or</p>
+                  <p>{t("about.call")}</p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </div>
     </div>
   );

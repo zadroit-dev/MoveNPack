@@ -14,6 +14,7 @@ export default function Footer() {
 
   const handleNavigate = (path) => {
     navigate(path);
+    window.scrollTo(0, 0);
   };
 
   const socialMediaLinks = [

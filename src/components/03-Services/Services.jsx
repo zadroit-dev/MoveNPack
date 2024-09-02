@@ -1,23 +1,28 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Row, Col, Container, Card } from "react-bootstrap";
+import { Button, Row, Col, Container, Card } from "react-bootstrap";
+
+import { useNavigate } from "react-router-dom";
 
 import img1 from "../../assets/services/img1.jpeg";
-import img2 from "../../assets/services/img2.jpeg";
+import img2 from "../../assets/services/service2.jpg";
 import img3 from "../../assets/services/img3.png";
 import img4 from "../../assets/services/img4.jpeg";
 import img5 from "../../assets/services/img5.jpg";
-import img6 from "../../assets/services/img6.jpg";
-import img7 from "../../assets/services/img7.jpg";
-import img8 from "../../assets/services/img8.jpg";
-
+import img6 from "../../assets/services/service6.jpg";
+import img7 from "../../assets/services/service7.jpg";
+import img8 from "../../assets/services/service8.jpg";
 
 import "./services.css";
 
 export default function Services() {
   const { t } = useTranslation("global");
 
+  const navigate = useNavigate();
 
+  const handleButtonClick = () => {
+    navigate("/get-a-quote");
+  };
 
   const posts = [
     {
@@ -120,7 +125,7 @@ export default function Services() {
 
         <Container>
           <section id="recent-posts" className="recent-posts section mt-5 mb-5">
-            <div className="section-title" data-aos="fade-up">
+            <div className="section-title mt-5" data-aos="fade-up">
               <h2>{t("services.title")}</h2>
             </div>
 
@@ -134,8 +139,12 @@ export default function Services() {
                   data-aos-delay={post.delay}
                   key={index}
                 >
-                  <Card className="post-card">
-                    <Card.Img variant="top" src={post.img} />
+                  <Card className="post-card service-item p-0">
+                    <Card.Img
+                      variant="top"
+                      className="serviceImages"
+                      src={post.img}
+                    />
                     <Card.Body>
                       <Card.Title>{t(post.titleKey)}</Card.Title>
                       <div className="d-flex align-items-center mt-2 mb-3">
@@ -150,6 +159,33 @@ export default function Services() {
             </Row>
           </section>
         </Container>
+
+        <div className="callToAction mt-5">
+          <section id="callToAct" className="callToAct section">
+            <Container>
+              <Row
+                className="justify-content-center"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <Col xl={10}>
+                  <div className="getReady text-center">
+                    <h3>{t("home.readyToMove")}</h3>
+                    <p>{t("home.readyToMoveCont")}</p>
+                    <Button
+                      className="getStartedBtn col-lg-5 col-12 mb-3"
+                      onClick={handleButtonClick}
+                    >
+                      {t("home.getStarted")}
+                    </Button>
+                    <p>Or</p>
+                    <p>{t("about.call")}</p>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+        </div>
       </div>
     </div>
   );

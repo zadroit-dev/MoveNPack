@@ -46,11 +46,17 @@ export default function Contact() {
 
     console.log(data);
 
-    const mailtoLink = `mailto:info@movenpack.ch?subject=Quote Request from ${formData.firstName} ${formData.lastName}&body=
-      Email: ${data.email}%0D%0A
-      Name: ${data.name}%0D%0A
-      Message: ${data.message}%0D%0A
-    `;
+    const mailtoLink = `mailto:info@movenpack.ch?subject=Contact Request from ${data.name}&body=
+    Dear Movenpack Team,%0D%0A%0D%0A
+    I would like to get in touch with you regarding the following:%0D%0A%0D%0A
+    Name: ${data.name}%0D%0A
+    Email: ${data.email}%0D%0A%0D%0A
+    Message:%0D%0A
+    ${data.message}%0D%0A%0D%0A
+    Please feel free to reach out to me at your earliest convenience.%0D%0A%0D%0A
+    Best regards,%0D%0A
+    ${data.name}`;
+
     window.location.href = mailtoLink;
   };
 
@@ -136,8 +142,8 @@ export default function Contact() {
           <Col lg={7}>
             <Form
               id="contact-form"
-              className="php-email-form"
-              onSubmit={handleSubmit} // Add onSubmit handler
+              className="emailForm"
+              onSubmit={handleSubmit}
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -197,10 +203,7 @@ export default function Contact() {
       </Container>
 
       <div className="callToAction mt-5 mb-5">
-        <section
-          id="call-to-action"
-          className="call-to-action section dark-background"
-        >
+        <section id="callToAct" className="callToAct section">
           <Container>
             <Row
               className="justify-content-center"

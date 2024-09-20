@@ -117,7 +117,10 @@ export default function Footer() {
             <p>
               <strong>{t("footer.email")}:</strong>{" "}
               <a href="mailto:info@movenpack.ch?subject=Inquiry from website">
-                info@movenpack.ch
+                info@movenpack.ch <br />
+              </a>
+              <a href="mailto:juan.hourou@movenpack.ch?subject=Inquiry from website">
+                juan.hourou@movenpack.ch
               </a>
             </p>
 

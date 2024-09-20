@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { Container, Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -21,8 +20,8 @@ export default function Footer() {
     { name: "Facebook", iconClass: "bi bi-facebook", url: "#" },
     { name: "Twitter", iconClass: "bi bi-twitter-x", url: "#" },
     { name: "Instagram", iconClass: "bi bi-instagram", url: "#" },
-    { name: "LinkedIn", iconClass: "bi bi-linkedin", url: "#" },
-    { name: "YouTube", iconClass: "bi bi-youtube", url: "#" },
+    // { name: "LinkedIn", iconClass: "bi bi-linkedin", url: "#" },
+    // { name: "YouTube", iconClass: "bi bi-youtube", url: "#" },
   ];
 
   return (
@@ -31,6 +30,7 @@ export default function Footer() {
         <Row className="gy-4">
           <Col lg={5} md={12} className="footer-about">
             <span className="sitename">MoveNPack</span>
+            <h3>{t("footer.address")}</h3>
             <p>{t("footer.aboutUsCont")}</p>
             <div className="social-links d-flex mt-4">
               {socialMediaLinks.map((link, index) => (

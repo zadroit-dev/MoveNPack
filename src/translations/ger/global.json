@@ -119,7 +119,6 @@
       "value": "Hier finden Sie alle Verpackungsmaterialien, die Sie für Ihren Umzug benötigen, an einem Ort."
     }
   },
-
   "contact": {
     "title": "Contact Us",
     "description": "Get in touch with us for any inquiries."
@@ -180,6 +179,7 @@
   },
   "footer": {
     "aboutUs": "Über uns",
+    "address": "Finanz Treuhand Schweiz GmbH Seebacher Textilpflege",
     "aboutUsCont": "MoveNPack bietet stressfreie Umzüge und fachmännische Tiefenreinigungsdienste für einen reibungslosen Übergang.",
     "contact": "Kontakt:",
     "mobile": "Telefon",

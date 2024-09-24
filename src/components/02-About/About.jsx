@@ -9,6 +9,7 @@ import introImg2 from "../../assets/home/introImageOne.jpg";
 
 import aim from "../../assets/about/aim.jpg";
 import goals from "../../assets/about/goals.jpeg";
+import { Helmet } from "react-helmet";
 
 export default function About() {
   const { t } = useTranslation("global");
@@ -48,6 +49,24 @@ export default function About() {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About us - Move N Pack</title>
+        <link rel="canonical" href="https://movenpack.ch/about" />
+
+        {/* Meta Description */}
+        {/* <meta
+          name="description"
+          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
+        /> */}
+
+        {/* Meta Keywords */}
+        <meta
+          name="keywords"
+          content="About Us Move N Pack, About Us movenpack, About Us moven pack, About Us move npack, About Us moving services, About Us professional movers, About Us relocation services"
+        />
+      </Helmet>
+
       <div className="aboutUs">
         <div className="contactUsHeader">
           <h3>{t("about.talioredSolutions")}</h3>

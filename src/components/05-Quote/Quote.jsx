@@ -72,6 +72,23 @@ export default function Quote() {
 
   return (
     <div className="getAQuote">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Get a Quote - Move N Pack</title>
+        <link rel="canonical" href="https://movenpack.ch/get-a-quote" />
+
+        {/* Meta Description */}
+        {/* <meta
+          name="description"
+          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
+        /> */}
+
+        {/* Meta Keywords */}
+        <meta
+          name="keywords"
+          content="Get a Quote Move N Pack, Get a Quote movenpack, Get a Quote moven pack, Get a Quote move npack, Get a Quote moving services, Get a Quote professional movers, Get a Quote relocation services"
+        />
+      </Helmet>
       <section id="get-a-quote" className="get-a-quote section">
         <Container>
           <Row className="g-0" data-aos="fade-up" data-aos-delay="100">

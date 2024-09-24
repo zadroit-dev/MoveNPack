@@ -7,6 +7,7 @@ import img4 from "../../assets/services/img4.jpeg";
 import { useNavigate } from "react-router-dom";
 
 import "./services.css";
+import { Helmet } from "react-helmet";
 export default function ServiceFour() {
   const { t } = useTranslation("global");
 
@@ -18,6 +19,23 @@ export default function ServiceFour() {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Cleaning and Moving - Move N Pack</title>
+        <link rel="canonical" href="https://movenpack.ch/cleaning-and-moving" />
+
+        {/* Meta Description */}
+        {/* <meta
+          name="description"
+          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
+        /> */}
+
+        {/* Meta Keywords */}
+        <meta
+          name="keywords"
+          content="Cleaning and Moving Move N Pack, Cleaning and Moving movenpack, Cleaning and Moving moven pack, Cleaning and Moving move npack, Cleaning and Moving moving services, Cleaning and Moving professional movers, Cleaning and Moving relocation services"
+        />
+      </Helmet>
       <div className="servicesOne">
         <div className="contactUsHeader">
           <h3 className="mt-4">{t("serviceFour.title")}</h3>

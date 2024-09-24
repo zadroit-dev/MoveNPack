@@ -12,6 +12,7 @@ import "./contact.css";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import "../01-Home/home.css";
+import { Helmet } from "react-helmet";
 
 export default function Contact() {
   const { t } = useTranslation("global");
@@ -62,6 +63,23 @@ export default function Contact() {
 
   return (
     <div className="contactUs">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact Us - Move N Pack</title>
+        <link rel="canonical" href="https://movenpack.ch/contact" />
+
+        {/* Meta Description */}
+        {/* <meta
+          name="description"
+          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
+        /> */}
+
+        {/* Meta Keywords */}
+        <meta
+          name="keywords"
+          content="Contact Us Move N Pack, Contact Us movenpack, Contact Us moven pack, Contact Us move npack, Contact Us moving services, Contact Us professional movers, Contact Us relocation services"
+        />
+      </Helmet>
       <div className="contactUsHeader">
         <h3>{t("contactUs.getInTouch")}</h3>
         <p>{t("contactUs.quote")}</p>

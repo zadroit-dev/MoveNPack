@@ -44,7 +44,7 @@ function App() {
   return (
     <>
       <Router>
-      <ScrollToTop />
+        <ScrollToTop />
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />

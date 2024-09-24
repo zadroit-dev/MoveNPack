@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import {Container, Col, Row, Button } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
 
 import img3 from "../../assets/home/transportService.jpg";
 import { useNavigate } from "react-router-dom";
@@ -17,6 +17,23 @@ export default function ServiceThree() {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Transport Service - Move N Pack</title>
+        <link rel="canonical" href="https://movenpack.ch/transport-service" />
+
+        {/* Meta Description */}
+        {/* <meta
+          name="description"
+          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
+        /> */}
+
+        {/* Meta Keywords */}
+        <meta
+          name="keywords"
+          content="Transport Service Move N Pack, Transport Service movenpack, Transport Service moven pack, Transport Service move npack, Transport Service moving services, Transport Service professional movers, Transport Service relocation services"
+        />
+      </Helmet>
       <div className="servicesOne">
         <div className="contactUsHeader">
           <h3 className="mt-4">{t("serviceThree.title")}</h3>

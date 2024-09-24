@@ -7,6 +7,7 @@ import img1 from "../../assets/services/img2.jpeg";
 import { useNavigate } from "react-router-dom";
 
 import "./services.css";
+import { Helmet } from "react-helmet";
 export default function ServiceOne() {
   const { t } = useTranslation("global");
 
@@ -17,6 +18,23 @@ export default function ServiceOne() {
   };
   return (
     <div>
+       <Helmet>
+        <meta charSet="utf-8" />
+        <title>Moving and Packing - Move N Pack</title>
+        <link rel="canonical" href="https://movenpack.ch/moving-and-packing" />
+
+        {/* Meta Description */}
+        {/* <meta
+          name="description"
+          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
+        /> */}
+
+        {/* Meta Keywords */}
+        <meta
+          name="keywords"
+          content="Services Move N Pack, Services movenpack, Services moven pack, Services move npack, Services moving services, Services professional movers, Services relocation services"
+        />
+      </Helmet>
       <div className="servicesOne">
         <div className="contactUsHeader">
           <h3 className="mt-4">{t("serviceOne.title")}</h3>

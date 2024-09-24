@@ -23,6 +23,7 @@ import img3 from "../../assets/home/transportService.jpg";
 import img4 from "../../assets/services/img4.jpeg";
 
 import "./home.css";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   const { t } = useTranslation("global");
@@ -111,6 +112,24 @@ export default function Home() {
 
   return (
     <Container fluid className="introContents">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Move N Pack</title>
+        <link rel="canonical" href="https://movenpack.ch/" />
+
+        {/* Meta Description */}
+        {/* <meta
+          name="description"
+          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
+        /> */}
+
+        {/* Meta Keywords */}
+        <meta
+          name="keywords"
+          content="Move N Pack, movenpack, moven pack, move npack, moving services, professional movers, relocation services"
+        />
+      </Helmet>
+
       <Row className="intro">
         <Col className="contents" lg={5} xs={12}>
           <h3>{t("home.welcomeMessage")}</h3>

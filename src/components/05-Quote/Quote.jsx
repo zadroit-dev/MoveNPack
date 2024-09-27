@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./quote.css";
 import quoteBg from "../../assets/images/quote-bg.jpg";
+import { Helmet } from "react-helmet";
 
 export default function Quote() {
   const { t } = useTranslation("global");

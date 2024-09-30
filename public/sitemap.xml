@@ -1,50 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://movenpack.ch/</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://movenpack.ch/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://movenpack.ch/services</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://movenpack.ch/moving-and-packing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://movenpack.ch/professional-cleaning</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://movenpack.ch/transport-service</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://movenpack.ch/cleaning-and-moving</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://movenpack.ch/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://movenpack.ch/get-a-quote</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <!-- More URLs as you defined in the pages array -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>https://movenpack.ch/</loc>
+<lastmod>2024-09-30T12:11:47+00:00</lastmod>
+</url>
+<url>
+<loc>https://movenpack.ch/about</loc>
+<lastmod>2024-09-30T12:11:47+00:00</lastmod>
+</url>
+<url>
+<loc>https://movenpack.ch/services</loc>
+<lastmod>2024-09-30T12:11:47+00:00</lastmod>
+</url>
+<url>
+<loc>https://movenpack.ch/moving-and-packing</loc>
+<lastmod>2024-09-30T12:11:47+00:00</lastmod>
+</url>
+<url>
+<loc>https://movenpack.ch/professional-cleaning</loc>
+<lastmod>2024-09-30T12:11:47+00:00</lastmod>
+</url>
+<url>
+<loc>https://movenpack.ch/transport-service</loc>
+<lastmod>2024-09-30T12:11:47+00:00</lastmod>
+</url>
+<url>
+<loc>https://movenpack.ch/cleaning-and-moving</loc>
+<lastmod>2024-09-30T12:11:47+00:00</lastmod>
+</url>
+<url>
+<loc>https://movenpack.ch/contact</loc>
+<lastmod>2024-09-30T12:11:47+00:00</lastmod>
+</url>
+<url>
+<loc>https://movenpack.ch/get-a-quote</loc>
+<lastmod>2024-09-30T12:11:47+00:00</lastmod>
+</url>
 </urlset>

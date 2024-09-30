@@ -114,19 +114,19 @@ export default function Home() {
     <Container fluid className="introContents">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Move N Pack</title>
+        <title>Move N Pack - Professional Moving and Cleaning Service</title>
         <link rel="canonical" href="https://movenpack.ch/" />
 
         {/* Meta Description */}
-        {/* <meta
+        <meta
           name="description"
-          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
-        /> */}
+          content="Move N Pack offers professional moving and cleaning services. Trusted by thousands, movenpack is here to handle all your move needs."
+        />
 
         {/* Meta Keywords */}
         <meta
           name="keywords"
-          content="Move N Pack, movenpack, moven pack, move npack, moving services, professional movers, relocation services"
+          content="moving services, professional movers, relocation services"
         />
       </Helmet>
 

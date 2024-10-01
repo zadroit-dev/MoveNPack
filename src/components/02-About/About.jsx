@@ -51,22 +51,21 @@ export default function About() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>About us - Move N Pack</title>
+        <title>MoveNpack: Trusted Professional Cleaning in Switzerland</title>
         <link rel="canonical" href="https://movenpack.ch/about" />
 
         {/* Meta Description */}
-        {/* <meta
+        <meta
           name="description"
-          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
-        /> */}
+          content="Discover Movenpack's professional cleaning services, seamless residential moves, and expert furniture assembly in Zurich, Switzerland. Your move made easy!"
+        />
 
         {/* Meta Keywords */}
         <meta
           name="keywords"
-          content="About Us Move N Pack, About Us movenpack, About Us moven pack, About Us move npack, About Us moving services, About Us professional movers, About Us relocation services"
+          content="moving services, professional movers, relocation services, professional cleaning services, residential moves, Zurich Switzerland, furniture assembly"
         />
       </Helmet>
-
       <div className="aboutUs">
         <div className="contactUsHeader">
           <h3>{t("about.talioredSolutions")}</h3>

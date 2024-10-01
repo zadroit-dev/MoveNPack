@@ -21,19 +21,19 @@ export default function ServiceTwo() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Professional Cleaning - Move N Pack</title>
-        <link rel="canonical" href="https://movenpack.ch/professional-cleaning" />
+        <title>MoveNpack: Trusted Professional Cleaning in Switzerland</title>
+        <link rel="canonical" href="https://movenpack.ch/about" />
 
         {/* Meta Description */}
-        {/* <meta
+        <meta
           name="description"
-          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
-        /> */}
+          content="Discover Movenpack's professional cleaning services, seamless residential moves, and expert furniture assembly in Zurich, Switzerland. Your move made easy!"
+        />
 
         {/* Meta Keywords */}
         <meta
           name="keywords"
-          content="Professional Cleaning Move N Pack, Professional Cleaning movenpack, Professional Cleaning moven pack, Professional Cleaning move npack, Professional Cleaning moving services, Professional Cleaning professional movers, Professional Cleaning relocation services"
+          content="moving services, professional movers, relocation services, professional cleaning services, residential moves, Zurich Switzerland, furniture assembly"
         />
       </Helmet>
       <div className="servicesOne">

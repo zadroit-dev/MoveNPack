@@ -114,19 +114,19 @@ export default function Home() {
     <Container fluid className="introContents">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Move N Pack - Professional Moving and Cleaning Service</title>
-        <link rel="canonical" href="https://movenpack.ch/" />
+        <title>MoveNpack: Trusted Professional Cleaning in Switzerland</title>
+        <link rel="canonical" href="https://movenpack.ch/about" />
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Move N Pack offers professional moving and cleaning services. Trusted by thousands, movenpack is here to handle all your move needs."
+          content="Discover Movenpack's professional cleaning services, seamless residential moves, and expert furniture assembly in Zurich, Switzerland. Your move made easy!"
         />
 
         {/* Meta Keywords */}
         <meta
           name="keywords"
-          content="moving services, professional movers, relocation services"
+          content="moving services, professional movers, relocation services, professional cleaning services, residential moves, Zurich Switzerland, furniture assembly"
         />
       </Helmet>
 

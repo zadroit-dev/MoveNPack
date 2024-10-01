@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import {Container, Col, Row, Button } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
 
 import img4 from "../../assets/services/img4.jpeg";
 
@@ -21,19 +21,19 @@ export default function ServiceFour() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Cleaning and Moving - Move N Pack</title>
-        <link rel="canonical" href="https://movenpack.ch/cleaning-and-moving" />
+        <title>MoveNpack: Trusted Professional Cleaning in Switzerland</title>
+        <link rel="canonical" href="https://movenpack.ch/about" />
 
         {/* Meta Description */}
-        {/* <meta
+        <meta
           name="description"
-          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
-        /> */}
+          content="Discover Movenpack's professional cleaning services, seamless residential moves, and expert furniture assembly in Zurich, Switzerland. Your move made easy!"
+        />
 
         {/* Meta Keywords */}
         <meta
           name="keywords"
-          content="Cleaning and Moving Move N Pack, Cleaning and Moving movenpack, Cleaning and Moving moven pack, Cleaning and Moving move npack, Cleaning and Moving moving services, Cleaning and Moving professional movers, Cleaning and Moving relocation services"
+          content="moving services, professional movers, relocation services, professional cleaning services, residential moves, Zurich Switzerland, furniture assembly"
         />
       </Helmet>
       <div className="servicesOne">

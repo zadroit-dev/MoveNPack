@@ -18,21 +18,21 @@ export default function ServiceOne() {
   };
   return (
     <div>
-       <Helmet>
+      <Helmet>
         <meta charSet="utf-8" />
-        <title>Moving and Packing - Move N Pack</title>
-        <link rel="canonical" href="https://movenpack.ch/moving-and-packing" />
+        <title>MoveNpack: Trusted Professional Cleaning in Switzerland</title>
+        <link rel="canonical" href="https://movenpack.ch/about" />
 
         {/* Meta Description */}
-        {/* <meta
+        <meta
           name="description"
-          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
-        /> */}
+          content="Discover Movenpack's professional cleaning services, seamless residential moves, and expert furniture assembly in Zurich, Switzerland. Your move made easy!"
+        />
 
         {/* Meta Keywords */}
         <meta
           name="keywords"
-          content="Services Move N Pack, Services movenpack, Services moven pack, Services move npack, Services moving services, Services professional movers, Services relocation services"
+          content="moving services, professional movers, relocation services, professional cleaning services, residential moves, Zurich Switzerland, furniture assembly"
         />
       </Helmet>
       <div className="servicesOne">

@@ -20,19 +20,19 @@ export default function ServiceThree() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Transport Service - Move N Pack</title>
-        <link rel="canonical" href="https://movenpack.ch/transport-service" />
+        <title>MoveNpack: Trusted Professional Cleaning in Switzerland</title>
+        <link rel="canonical" href="https://movenpack.ch/about" />
 
         {/* Meta Description */}
-        {/* <meta
+        <meta
           name="description"
-          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
-        /> */}
+          content="Discover Movenpack's professional cleaning services, seamless residential moves, and expert furniture assembly in Zurich, Switzerland. Your move made easy!"
+        />
 
         {/* Meta Keywords */}
         <meta
           name="keywords"
-          content="Transport Service Move N Pack, Transport Service movenpack, Transport Service moven pack, Transport Service move npack, Transport Service moving services, Transport Service professional movers, Transport Service relocation services"
+          content="moving services, professional movers, relocation services, professional cleaning services, residential moves, Zurich Switzerland, furniture assembly"
         />
       </Helmet>
       <div className="servicesOne">

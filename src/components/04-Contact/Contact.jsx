@@ -65,19 +65,19 @@ export default function Contact() {
     <div className="contactUs">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Contact Us - Move N Pack</title>
-        <link rel="canonical" href="https://movenpack.ch/contact" />
+        <title>MoveNpack: Trusted Professional Cleaning in Switzerland</title>
+        <link rel="canonical" href="https://movenpack.ch/about" />
 
         {/* Meta Description */}
-        {/* <meta
+        <meta
           name="description"
-          content="Move N Pack offers professional moving services. Trusted by thousands, movenpack is here to handle all your move needs."
-        /> */}
+          content="Discover Movenpack's professional cleaning services, seamless residential moves, and expert furniture assembly in Zurich, Switzerland. Your move made easy!"
+        />
 
         {/* Meta Keywords */}
         <meta
           name="keywords"
-          content="Contact Us Move N Pack, Contact Us movenpack, Contact Us moven pack, Contact Us move npack, Contact Us moving services, Contact Us professional movers, Contact Us relocation services"
+          content="moving services, professional movers, relocation services, professional cleaning services, residential moves, Zurich Switzerland, furniture assembly"
         />
       </Helmet>
       <div className="contactUsHeader">
